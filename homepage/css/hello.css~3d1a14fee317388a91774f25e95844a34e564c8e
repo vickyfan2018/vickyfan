@@ -1,0 +1,87 @@
+@font-face {font-family: "gotham-book";src: url("../fonts/Gotham-Book.otf");}
+@font-face {font-family: "gotham-medium";src: url("../fonts/Gotham-Medium.otf");}
+header {
+	z-index: 1;
+	width: 100%;
+	
+}
+
+.logo {
+	padding: 1.25rem 1.25rem;
+}
+
+.nav-list {
+	padding: 1.25rem 1.25rem;
+	font-family: 'Merriweather', serif;
+	float:right;
+	font-weight: 900;
+
+}
+
+.nav-item {
+	display: inline-block;
+	width:7rem;
+	font-size: calc(14px + 0.5vw);
+	text-align: center;
+	padding:0.25rem;
+	text-decoration: none;
+	color:black;
+}
+
+.section-1 {
+	 background: linear-gradient(to right, #FAFAFA , #DDDDDD);
+	}
+
+
+
+
+
+h1,h2, p, ul {
+	color: white;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: 900;
+	font-size: 6rem;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+		font-weight: 300;
+	padding-left:0.3em;
+}
+
+
+
+p {
+
+	font-family: 'Gotham-Book', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 30px;
+	color: black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:80px;
+}
+
+.img-container {
+margin:auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+ .img-container >img {
+ 	width:300px;
+ 		padding-left: 10px;
+padding-right: 10px;
+margin: auto
+}
+
