@@ -1,0 +1,165 @@
+@font-face {font-family: "gotham-book";src: url("../fonts/Gotham-Book.otf");}
+@font-face {font-family: "gotham-medium";src: url("../fonts/Gotham-Medium.otf");}
+header {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+}
+
+.logo {
+	padding: 1.25rem 1.25rem;
+}
+
+.nav-list {
+	padding: 1.25rem 1.25rem;
+	font-family: 'Merriweather', serif;
+	float:right;
+	font-weight: 900;
+
+}
+
+.nav-item {
+	display: inline-block;
+	width:7rem;
+	font-size: calc(14px + 0.5vw);
+	text-align: center;
+	padding:0.25rem;
+	text-decoration: none;
+	color:black;
+}
+
+.section-1 {
+	 background: linear-gradient(to right, #32B7D4 , #6EBB78);
+	height: 100vh;
+	overflow: hidden;
+}
+
+.section {
+	height: 100vh;
+}
+
+
+.left {
+	width:45%;
+	padding-left:4rem;
+	float: left;
+	padding-top:13rem;
+}
+
+h1,h2, p, ul {
+	color: white;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	padding-left:0.3em;
+	padding-top: 2rem;
+}
+
+.line {
+padding-top:2rem;
+border-bottom: 0.5px solid white; 
+width: 200px;
+}
+
+p {
+	padding-top: 2.5rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+
+.right .mypic {
+	padding-top:8rem;
+	margin-left: 10rem;
+	display: inline-block;
+	width:28%;
+}
+
+.secondpage {
+width:100%;
+position: relative;
+overflow: hidden;
+}
+
+.secondpic{
+width:100%;
+height: 100%;
+}
+
+.center {
+	width:100%;
+	position: absolute;
+	top:300px;
+	text-align: center;
+	background-color: red;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+.secondpre {
+	color: white;
+}
+
+.secondnext {
+	color: white;
+}
+
+.thirdpic {
+ animation-name: example;
+    animation-duration: 1s;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+     animation-fill-mode: both;
+     animation-delay: 1s;
+}
+
+@keyframes example {
+    from {transform: translate(-500px, -500px);}
+    to {transform: translate(400px, 250px)}
+}
+
+.thirdpage {
+	width:100%;
+position: relative;
+}
+
+.sad {
+	width: 100vw;
+	height: 100%;
+}
+
+.giveup {
+	position: absolute;
+	top:200px;
+	left: 300px;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	font-size: 5rem;
+	animation-name: gaveup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gaveup {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+.center h2 {
+	padding-top: 0
+}
