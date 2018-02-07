@@ -163,3 +163,15 @@ position: relative;
 .center h2 {
 	padding-top: 0
 }
+
+.theend {
+	position: absolute;
+	margin: auto;
+	width:100%;
+	top:200px;
+	animation-name: gaveup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    	font-size: 5rem;
+    	font-family: 'Bree Serif', sans-serif;
+}
