@@ -1,0 +1,106 @@
+@font-face {font-family: "gotham-book";src: url("../fonts/Gotham-Book.otf");}
+@font-face {font-family: "gotham-medium";src: url("../fonts/Gotham-Medium.otf");}
+header {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+}
+
+.logo {
+	padding: 1.25rem 1.25rem;
+}
+
+.nav-list {
+	padding: 1.25rem 1.25rem;
+	font-family: 'Merriweather', serif;
+	float:right;
+	font-weight: 900;
+
+}
+
+.nav-item {
+	display: inline-block;
+	width:7rem;
+	font-size: calc(14px + 0.5vw);
+	text-align: center;
+	padding:0.25rem;
+	text-decoration: none;
+	color:white;
+}
+
+.section-1 {
+	 background: linear-gradient(to right, #32B7D4 , #6EBB78);
+	height: 100vh;
+	overflow: hidden;
+}
+
+.section {
+	height: 100vh;
+}
+
+
+.left {
+	width:48%;
+	padding-left:4rem;
+	float: left;
+	padding-top:10rem;
+}
+
+h1,h2, p, ul {
+	color: white;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-family: 'Bree Serif', sans-serif;
+	font-weight: 900;
+	font-size: 6rem;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+		font-weight: 300;
+	padding-left:0.3em;
+}
+
+.line {
+padding-top:2rem;
+border-bottom: 0.5px solid white; 
+width: 200px;
+}
+
+p {
+	padding-top: 2rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+
+
+.right .mypic {
+	padding-top: 2rem;
+	margin-left: 10rem;
+	display: inline-block;
+	width:20%;
+}
+
+
+
+.fp-tooltip{
+		color: #AAA;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+
+.lastsection {
+	background-image: url("../images/123.jpg");
+	  background-size: cover;
+    background-position: center; 
+}
