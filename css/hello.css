@@ -71,9 +71,8 @@ width: 200px;
 }
 
 p {
-	padding-top: 2rem;
 	font-family: 'Lato', sans-serif;
-	font-size: 1em;
+	font-size: 0.8em;
 
 }
 
@@ -89,18 +88,3 @@ p {
 
 
 
-.fp-tooltip{
-		color: #AAA;
-	}
-	#fp-nav span, .fp-slidesNav span{
-		border-color: #AAA;
-	}
-	#fp-nav li .active span, .fp-slidesNav .active span{
-		background: #AAA;
-	}
-
-.lastsection {
-	background-image: url("../images/123.jpg");
-	  background-size: cover;
-    background-position: center; 
-}
