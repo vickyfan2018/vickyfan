@@ -1,0 +1,236 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url("../fonts/ProNovBlack.ttf");
+    font-weight:700;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProNovBold.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.otf");
+    font-weight:700;
+}
+
+.section-1 {
+	 background: url("../images/Doraemon-bg.png");
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position: relative;
+}
+
+.section {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Brandon_blk', sans-serif;
+	font-weight: 900;
+	font-size: 7rem;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 10px grey;
+}
+
+h2 {
+	font-family: 'ProximaNovaBold', sans-serif;
+	font-weight: 700;
+}
+
+
+.hand {
+	z-index: 0;
+	height: 80vh;
+	position: absolute;
+	bottom: 0px;
+	animation-name:showhand;
+	animation-duration: 1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes showhand {
+	 from {opacity:0;
+    	transform: translate(3000px, 2000px);
+    }
+    to {
+    	opacity: 1;}
+}
+
+.toast-name {
+	z-index: 10;
+	top:35vh;
+	position: absolute;
+	width: 100%;
+	animation-name:zoomin;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes zoomin {
+	 0% {opacity: 0;
+	 	font-size: 0;
+    	transform: translate(25vw, 50vh) skew(130deg,130deg);
+    }
+    25%{ transform:rotate(-180deg) skew(180deg,180deg); }
+    50% {transform: translate(50%, 50%);
+    	transform:rotate(-360deg);
+    	opacity: 0.5;}
+    	75%{ transform:rotate(180deg) }
+    100%{font-size: 7rem;
+    	transform:rotate(360deg);
+    	opacity: 1;
+    }
+}
+
+/*arrow*/
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+   transform: translateY(-15px);
+  }
+}
+
+.arrow {
+	z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/arrow.png");
+  background-size: contain;
+}
+
+.bounce {
+  animation-name: bounce;
+   animation-duration: 2s ;
+   animation-iteration-count: infinite
+}
+
+.bounce p {
+	position: absolute;
+	font-family: 'ProximaNovaBlack', sans-serif;
+	top:-50px;
+}
+
+/*section-2 css*/
+.instruction{
+	line-height: 3.3rem;
+	font-size: 3rem;
+	font-family: 'ProximaNovaBold', sans-serif;
+	padding-left: 0.5rem;
+	color: white;
+	text-shadow: 2px 2px 20px black;
+	text-align: center;
+	padding-left: 5rem;
+	padding-right:5rem;
+}
+
+.section-2 {
+	 background: url("../images/print-on-toast.jpg");
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position: relative;
+	opacity:0.7;
+}
+
+/*section-3 css*/
+.section-3 {
+	 background: url("../images/doraemon-wp.jpg");
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position: relative;
+	opacity:1;
+}
+
+/*section-4 css*/
+.section-4 {
+	position: relative;
+}
+.section-4 .left-red {
+	width:50%;
+	height: 100vh;
+	margin: 0;
+	background-color: #FF5F5F;
+	display: inline-block;
+}
+
+.not-use-wrapper {
+	padding-top: 45vh;
+	text-align: center;
+	height: 100%
+}
+
+.not-use, .use  {
+	color: white;
+	text-align: center;
+	font-size: 3.3rem;
+	display: inline-block;
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+}
+.use-wrapper {
+
+	width: 49vw;
+	display: inline;
+	text-align: center;
+	float: left;
+	position: absolute;
+	right:0px;
+}
+
+.use {
+ padding-top: 45vh;
+}
+
+.section-4 a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+ 
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section-4 a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.fp-tooltip{
+		color: #AAA;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+
+.lastsection {
+	background-image: url("../images/Big-dora-bg.jpg");
+	  background-size: cover;
+    background-position: center; 
+}

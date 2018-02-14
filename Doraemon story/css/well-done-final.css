@@ -1,0 +1,149 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url("../fonts/ProNovBlack.ttf");
+    font-weight:700;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProNovBold.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.otf");
+    font-weight:700;
+}
+
+#fullpage {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(#F2C94C, #F2994A );
+}
+
+
+.section-1 img {
+	width: 70%;
+	position: absolute;
+	top: 30%;
+	display: block;
+	margin-left: 15%;
+	animation-duration: 2s;
+	animation-name: fadein;
+}
+
+
+
+h1 {
+	font-family: 'Brandon_blk', sans-serif;
+	font-weight: 900;
+	font-size: 15rem;
+		display: inline-block;
+		text-shadow: 2px 2px white;
+}
+
+h2 {
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #F2F2F2;
+	opacity: 1
+}
+
+.tomorrow {
+	animation-duration: 2s;
+	animation-name: flytoright;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	padding-top: 70px;
+	padding-left: 8vw;
+	margin: auto;
+
+}
+
+@keyframes flytoright {
+		from {opacity:0;
+    	transform: translateX(-1000px);}
+    to {
+    	opacity: 1;}
+
+}
+
+@keyframes fadein {
+	from {opacity:0;
+    	}
+    to {
+    	opacity: 1;}
+}
+
+.flyin {
+	color:#03A6D7;
+	position: absolute;
+	 top: -500px;
+	text-align: center;
+	width: 100%
+}
+
+h1 {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+h1:nth-child(1) {
+	animation-name: fail;
+	 animation-duration: 2s;
+	  animation-delay: 1s;
+	  animation-fill-mode: forwards;
+}
+h1:nth-child(2) {
+	animation-name: fail;
+	 animation-duration: 2s;
+	 	 animation-delay: 1.5s;
+	 	  animation-fill-mode: forwards;
+}
+
+@keyframes fail {
+    from {opacity:0;
+    	transform: translateY(-500px);
+    }
+    to {transform: translateY( 600px);
+    	opacity: 1;}
+}
+
+.playagain {
+	font-family:'ProximaNovaBlack', sans-serif;
+	font-weight: 700; 
+	font-size: 0.8rem;
+	color: white;
+	position: absolute;
+	right:20px;
+	top:30px;
+  padding: 10px;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-align: center;
+  text-transform: uppercase;
+  overflow:hidden;
+  transition: .3s;
+  border-radius: 1.5rem;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.playagain:hover {
+	color: black;
+	 position: absolute;
+    transition: .3s; 
+    background: #f7f7f7;
+    cursor: pointer;
+ 
+    
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: black;
+}

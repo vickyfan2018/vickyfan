@@ -1,0 +1,248 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url("../fonts/ProNovBlack.ttf");
+    font-weight:700;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProNovBold.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.otf");
+    font-weight:700;
+}
+
+.section-1 {
+
+}
+
+.section {
+	height: 100vh;
+}
+
+h1 {
+	font-family: 'Brandon_blk', sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+}
+
+h2 {
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+}
+
+.intro {
+	position: absolute;
+	top:80px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+   transform: translateY(-15px);
+  }
+}
+
+
+
+.arrow {
+	z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/arrow.png");
+  background-size: contain;
+}
+
+.bounce {
+  animation-name: bounce;
+   animation-duration: 2s ;
+   animation-iteration-count: infinite
+}
+
+.bounce p {
+	position: absolute;
+	font-family: 'ProximaNovaBlack', sans-serif;
+	top:-50px;
+}
+
+
+/*section-2 css*/
+.left {
+	background: url("../images/Doraemon.png");
+	width:50%;
+	height: 100%;
+	float: left;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
+
+}
+
+.askhelp{ 
+	color: white;
+	width:50%;
+	float: right;
+	height: 100%;
+	background-color: #03A6D7;
+	display: table; }
+
+.askhelp-inner {
+	
+	padding-left: 10%;
+	padding-right:10%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.helpu{
+	line-height: 2.3rem;
+	font-size: 1.8rem;
+	font-family: 'ProximaNovaBold', sans-serif;
+	padding-left: 0.5rem;
+}
+
+
+.fp-tooltip{
+		color: #AAA;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+
+.lastsection {
+	background-image: url("../images/Big-dora-bg.jpg");
+	  background-size: cover;
+    background-position: center; 
+}
+
+/*button
+*/
+
+.animate
+{
+	transition: all 0.1s;
+}
+
+.action-button
+{ border-color: rgba(0,0,0,0);
+	position: relative;
+	padding: 10px 40px;
+  margin: 20px 10px 10px 10px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+
+.action-button:active
+{transform: translate(0px,5px);
+	border-bottom: 1px solid;
+	cursor:pointer;
+}
+
+a {
+	color:white;
+}
+
+button:hover {
+	cursor: pointer
+}
+
+/*section-4 css*/
+.section-4 {
+	position: relative;
+}
+.section-4 .left-red {
+	width:50%;
+	height: 100vh;
+	margin: 0;
+	background-color: #FF5F5F;
+	display: inline-block;
+}
+
+.not-use-wrapper {
+	padding-top: 45vh;
+	text-align: center;
+	height: 100%
+}
+
+.not-use, .use  {
+	color: white;
+	text-align: center;
+	font-size: 3.3rem;
+	display: inline-block;
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+}
+.use-wrapper {
+
+	width: 49vw;
+	display: inline;
+	text-align: center;
+	float: left;
+	position: absolute;
+	right:0px;
+}
+
+.use {
+ padding-top: 45vh;
+}
+
+
+/*section-2*/
+.section-4 a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+ 
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section-4 a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+

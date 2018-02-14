@@ -1,0 +1,132 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url("../fonts/ProNovBlack.ttf");
+    font-weight:700;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProNovBold.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.otf");
+    font-weight:700;
+}
+
+.section-1 {
+	i
+	position: relative;
+}
+
+.section {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Brandon_blk', sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+}
+
+h2 {
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+}
+
+
+.section-1 {
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+.left {
+	width:50%;
+	height: 100%;
+	float: left;
+	text-align: center;	
+}
+
+.left img {
+	height: 80vh;
+	margin-top: 70px;
+}
+
+.askhelp{ 
+	color: white;
+	width:50%;
+	float: right;
+	height: 100%;
+	background-color: #F5A0B3}
+
+.askhelp-inner {
+	padding-top: 25%;
+	padding-bottom: 40%;
+	padding-left: 10%;
+	padding-right:10%;
+}
+
+.askhelp .worry {
+	margin: auto;
+}
+
+.mum, .helpu{
+	line-height: 2.3rem;
+	font-size: 1.8rem;
+	font-family: 'ProximaNovaBold', sans-serif;
+	padding-left: 0.5rem;
+}
+
+
+
+
+/*button
+*/
+
+.animate
+{
+	transition: all 0.1s;
+}
+
+.action-button
+{ border-color: rgba(0,0,0,0);
+	position: relative;
+	padding: 10px 40px;
+  margin: 20px 10px 10px 10px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+
+.action-button:active
+{transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+a {
+	color:white;
+}
+button:hover {
+	cursor: pointer
+}

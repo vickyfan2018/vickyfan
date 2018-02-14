@@ -1,0 +1,169 @@
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url("../fonts/ProNovBlack.ttf");
+    font-weight:700;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProNovBold.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.otf");
+    font-weight:700;
+}
+
+.section-1 {
+
+}
+
+.section {
+	height: 100vh;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Brandon_blk', sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+}
+
+h2 {
+	font-family: 'ProximaNovaBlack', sans-serif;
+	font-weight: 700;
+}
+
+
+
+/*section-2 css*/
+.left {
+	padding-top: 10%;
+	padding-left: 4rem;
+	width:40%;
+	height: 100%;
+	float: left;
+
+}
+
+.left img {
+	width:40%;
+	padding-top: 10%;	animation-duration: 2s;
+	animation-name: flydownwards;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+.tomorrow{
+	animation-duration: 2s;
+	animation-name: flytoright;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	line-height: 2.3rem;
+	font-size: 1.8rem;
+	font-family: 'ProximaNovaBold', sans-serif;
+}
+
+@keyframes flytoright {
+		from {opacity:0;
+    	transform: translateX(-1000px);}
+    to {
+    	opacity: 1;}
+
+}
+
+.well-done {
+	animation-duration: 2s;
+	animation-name: flydownwards;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	opacity: 0;
+	font-family: 'ProximaNovaBold', sans-serif;
+}
+
+.right-test-paper{ 
+	color: white;
+	width:60%;
+	float: right;
+	height: 100%;
+	background-color: #FFDD67 }
+
+.right-test-paper-inner {
+	padding-top: 15%;
+	padding-bottom: 40%;
+	padding-left: 10%;
+	padding-right:10%;
+}
+
+.right-test-paper-inner img {
+	width:50vw;
+	animation-duration: 2s;
+	animation-name: flyupwards;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes flyupwards {
+	from {opacity:0;
+    	transform: translateY(1000px);}
+    to {
+    	opacity: 1;}
+}
+
+
+@keyframes flydownwards {
+	from {opacity:0;
+    	transform: translateY(-1000px);}
+    to {
+    	opacity: 1;}
+}
+
+/*button
+*/
+
+
+
+.action-button
+{ font-family:'ProximaNovaBlack', sans-serif;
+	font-weight: 700; 
+	font-size: 0.8rem;
+	color: white;
+	position: absolute;
+	right:20px;
+	top:30px;
+  padding: 10px;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-align: center;
+  text-transform: uppercase;
+  overflow:hidden;
+  transition: .3s;
+  border-radius: 1.5rem;
+  background-color: rgba(255,255,255,0.1);	
+}
+
+.action-button:hover {
+	color: black;
+	 position: absolute;
+    transition: .3s; 
+    background: #f7f7f7;
+   
+   
+}
+
+
+a {
+	color:white;
+}
+
+a:hover {
+	color: black;
+	cursor: pointer;
+}
+button {
+	cursor: pointer
+}
