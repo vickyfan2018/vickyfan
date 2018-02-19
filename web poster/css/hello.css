@@ -1,0 +1,201 @@
+@font-face {font-family: "gotham-book";src: url("../fonts/Gotham-Book.otf");}
+@font-face {font-family: "gotham-medium";src: url("../fonts/Gotham-Medium.otf");}
+
+#container {
+	position: relative;
+}
+#form-front {
+	position: absolute;
+	top:0;
+	z-index: 10;
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+}
+.input-container {
+	position: absolute;
+	width: 100%;
+	top:30%;
+	text-align: center;
+	font-family: gotham-book;
+	line-height: 3.5rem;
+	font-size: 3rem;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button  {
+    width: 10%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dialogue-box{
+	position: absolute;
+	top:8%;
+	width: 20vw;
+	height: 20vh;
+	right:23%;
+}
+
+.dialogue-box img{
+ width: 20vw;
+}
+
+#showname {
+	position: absolute;
+	top:55%;
+	right:8em;
+	font-family: gotham-book;
+	color: #CE1717;
+}
+
+.background {
+	z-index: 0;
+	width: 100%;
+	height: 110vh;
+	background-image: url("../images/back-ground.png");
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.circle {
+
+	 display: block;
+text-align: center;
+}
+
+.circle img {
+	 width: 55%;
+	padding-top: 50px;
+}
+
+.moneydecoration {
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: slidedown;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes slidedown {
+	0% {
+		transform: translate(0px, -1000px); 
+	}
+	100% {transform: translate(0px, 0px);  }
+}
+
+.moneydecoration img {
+	width:20vw;
+}
+
+.wing-deocration{
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	animation-name: slidedown;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+.wing-deocration img {
+	width:20vw;
+}
+
+.pink-flower {
+	display: inline;
+	z-index: 1;
+	position: absolute;
+	top:45%;
+	left:13vw;
+	animation-name: flower-rotation;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.pink-flower img {
+	width:10vw;
+}
+
+@keyframes flower-rotation {
+	100% { transform: rotate(360deg); }
+}
+
+.cloud {
+	position: absolute;
+	top:55%;
+	left:-50px;
+	animation-name: slideright;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes slideright {
+	0% {
+		transform: translateX(-500px); 
+	}
+	100% {  }
+}
+
+
+.cloud img {
+	width:20vw;
+}
+
+.orange-flower {
+	position: absolute;
+	top:45%;
+	right:13vw;
+	animation-name: flower-rotation;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.orange-flower img {
+	width:10vw;
+}
+
+.blue-cloud {
+	position: absolute;
+	top:58%;
+	right:-50px;
+	animation-name: slideleft;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+.blue-cloud img {
+	width:20vw;
+}
+
+@keyframes slideleft
+ {
+	0% {
+		transform: translateX(100vw); 
+	}
+	100% {  }
+}
+
+
+
