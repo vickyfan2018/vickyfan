@@ -265,7 +265,7 @@ animation-name: addon;
 	animation-fill-mode:forwards;
 	opacity: 0;
 		width: 80%;
-		padding-left: 15%;
+		padding-left: 12.5%;
 }
 .instruction {
 	font-size: 1.5rem;
