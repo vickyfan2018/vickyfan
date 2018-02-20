@@ -189,3 +189,52 @@ a {
 button:hover {
 	cursor: pointer
 }
+
+@media (max-width: 500px) {
+
+.intro {
+	font-size: 2.5rem;
+}
+
+.left {
+width:100%;
+height: 50%;
+}
+
+.askhelp {
+	width:100%;
+	height: 50%;
+}
+
+.askhelp-inner{
+	vertical-align: center;
+
+}
+
+.worry {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.helpu {
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	padding-left: 0rem;
+	text-align: center;
+}
+
+.section-1 {
+	background-position: top ;
+}
+.buttongroup {
+	width:100%;
+	display: flex;
+
+}
+
+.buttongroup a  {
+	margin: auto;
+
+}
+
+}
