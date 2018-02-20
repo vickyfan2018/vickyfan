@@ -143,9 +143,11 @@ display: inline;
 
 
 @media only screen and (max-width: 620px) {
+#error{top:25%;
+}
 .upper-container{
   display: flex;
-        height: 100%;
+        height: 80%;
 }
 
     #droppable, #draggable {

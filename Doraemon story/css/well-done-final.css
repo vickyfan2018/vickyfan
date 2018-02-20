@@ -30,7 +30,7 @@
 	top: 30%;
 	display: block;
 	margin-left: 15%;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-name: fadein;
 }
 
@@ -113,6 +113,11 @@ h1:nth-child(2) {
 }
 
 .playagain {
+		animation-duration: 4s;
+		animation-delay: 2s;
+		opacity: 0;
+		animation-fill-mode: forwards;
+	animation-name: fadein;
 	font-family:'ProximaNovaBlack', sans-serif;
 	font-weight: 700; 
 	font-size: 0.8rem;
@@ -146,4 +151,93 @@ a {
 
 a:hover {
 	color: black;
+}
+
+
+
+@media  screen and (max-width: 961px) {
+h1 {
+	font-size: 12rem;	
+}
+
+@keyframes fail {
+    from {opacity:0;
+    	transform: translateY(-500px);
+    }
+    to {transform: translateY( 650px);
+    	opacity: 1;}
+}
+
+.section img {
+	width:97%;
+	top:45%;
+	margin-left: 1.5%;
+}
+}
+
+@media  screen and (max-width: 960px) {
+h1 {
+	font-size: 10rem;	
+}
+
+}
+
+@media  screen and (max-width: 579px) {
+h1 {
+	font-size:6.5rem;}
+@keyframes fail {
+    from {opacity:0;
+    	transform: translateY(-500px);
+    }
+    to {transform: translateY( 610px);
+    	opacity: 1;}
+}
+}
+
+
+@media  screen and (max-width: 572px) {
+.section img {
+	width:97%;
+	top:45%;
+	margin-left: 1.5%;
+}
+
+h1 {
+	font-size:6rem;
+	padding-left:0.3rem;
+	padding-right: 0.3rem;
+}
+.playagain {
+	font-size:0.5rem;
+}
+.tomorrow {
+	font-size:2rem;
+}
+@keyframes fail {
+    from {opacity:0;
+    	transform: translateY(-500px);
+    }
+    to {transform: translateY( 610px);
+    	opacity: 1;}
+}
+}
+@media  screen and (max-width: 330px) {
+h1 {
+	font-size:5rem;
+	padding-left:0rem;
+	padding-right: 0rem;
+}
+.tomorrow {
+	font-size:1.2rem;
+}
+.playagain {
+	font-size:0.5rem;
+}
+@keyframes fail {
+    from {opacity:0;
+    	transform: translateY(-500px);
+    }
+    to {transform: translateY( 620px);
+    	opacity: 1;}
+}
 }

@@ -149,7 +149,7 @@ animation-name: addon;
 	font-family: 'ProximaNovaBold', sans-serif;
 	padding-left: 0.5rem;
 	color: white;
-	text-shadow: 2px 2px 20px black;
+	text-shadow: 2px 2px 10px black;
 	text-align: center;
 	padding-left: 5rem;
 	padding-right:5rem;
@@ -173,8 +173,10 @@ animation-name: addon;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	position: relative;
-	opacity:1;
+	opacity:0.8;
 }
+
+
 
 /*section-4 css*/
 .section-4 {
@@ -201,6 +203,7 @@ animation-name: addon;
 	display: inline-block;
 	font-family: 'ProximaNovaBlack', sans-serif;
 	font-weight: 700;
+	width: 90%
 }
 .use-wrapper {
 
@@ -248,4 +251,112 @@ animation-name: addon;
 	background-image: url("../images/Big-dora-bg.jpg");
 	  background-size: cover;
     background-position: center; 
+}
+
+@media (max-width: 560px) {
+.hand {
+	height: 60vh;
+	margin-left: -35vw;
+}
+.toast-name {
+	animation-name:zoomin-media-560;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+		width: 80%;
+		padding-left: 15%;
+}
+.instruction {
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+}
+
+
+@keyframes zoomin-media-560 {
+	 0% {opacity: 0;
+	 	font-size: 0;
+    	transform: translate(25vw, 50vh) skew(130deg,130deg);
+    }
+    25%{ transform:rotate(-180deg) skew(180deg,180deg); }
+    50% {transform: translate(50%, 50%);
+    	transform:rotate(-360deg);
+    	opacity: 0.5;}
+    	75%{ transform:rotate(180deg) }
+    100%{font-size: 5rem;
+    	transform:rotate(360deg);
+    	opacity: 1;
+    }
+}
+.section-4 .left-red  {
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top:0;
+}
+.not-use-wrapper {
+	padding-top: 0;
+
+}
+
+.not-use {
+font-size: 2.2rem;
+padding-top: 23vh;
+padding-left: 2rem;
+	padding-right: 2rem;
+}
+.use-wrapper {
+	width: 100%;
+	height: 50vh;
+}
+.use {
+	padding-top: 23vh;
+	font-size: 2.2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+}
+
+@media (min-width: 561px) and (max-width: 960px) {
+.hand {
+	height: 80vh;
+	margin-left: -200px
+}
+.not-use {
+font-size: 2.5rem;
+padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.use {
+	font-size: 2.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.toast-name {
+	animation-name:zoomin-media-960;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+	width: 80%;
+	padding-left: 20%
+}
+@keyframes zoomin-media-960 {
+	 0% {opacity: 0;
+	 	font-size: 0;
+    	transform: translate(25vw, 50vh) skew(130deg,130deg);
+    }
+    25%{ transform:rotate(-180deg) skew(180deg,180deg); }
+    50% {transform: translate(50%, 50%);
+    	transform:rotate(-360deg);
+    	opacity: 0.5;}
+    	75%{ transform:rotate(180deg) }
+    100%{font-size: 6rem;
+    	transform:rotate(360deg);
+    	opacity: 1;
+    }
+}
+
 }

@@ -246,3 +246,131 @@ button:hover {
   left: 0; 
 }
 
+@media (max-width: 560px) {
+
+.intro {
+	font-size: 2.5rem;
+}
+
+.left {
+width:100%;
+height: 50%;
+}
+
+.askhelp {
+	width:100%;
+	height: 50%;
+}
+
+.askhelp-inner{
+	vertical-align: center;
+
+}
+
+.worry {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.helpu {
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	padding-left: 0rem;
+	text-align: center;
+}
+
+.left {
+	background-size: 60%;
+
+}
+.buttongroup {
+	width:100%;
+	display: flex;
+
+}
+
+.buttongroup a  {
+	margin: auto;
+}
+
+.action-button {
+	font-size: 1.1rem
+}
+.section-4 .left-red  {
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top:0;
+}
+.not-use-wrapper {
+	padding-top: 0;
+
+}
+
+.not-use {
+font-size: 2.2rem;
+padding-top: 23vh;
+padding-left: 2rem;
+	padding-right: 2rem;
+}
+.use-wrapper {
+	width: 100%;
+	height: 50vh;
+}
+.use {
+	padding-top: 23vh;
+	font-size: 2.2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+}
+
+@media (min-width: 561px) and (max-width: 960px) {
+.section-2 {
+	display: flex;
+	flex-direction: column;
+}
+.left {
+	width:50vw;
+	background-size:80%;
+		float: left;
+}
+
+.askhelp{ 
+	float: left;
+	width:50vw;
+}
+
+.askhelp-inner {
+	margin:auto;
+
+}
+
+.worry {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+.helpu{
+	line-height: 1.7rem;
+	font-size: 1.4rem;
+	padding-left: 0rem;
+}
+.action-button{
+	margin: 20px 10px 10px 0px;
+}
+.not-use {
+font-size: 2.5rem;
+padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.use {
+	font-size: 2.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+}

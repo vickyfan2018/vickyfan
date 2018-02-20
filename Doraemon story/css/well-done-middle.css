@@ -16,9 +16,7 @@
     font-weight:700;
 }
 
-.section-1 {
 
-}
 
 .section {
 	height: 100vh;
@@ -166,4 +164,91 @@ a:hover {
 }
 button {
 	cursor: pointer
+}
+
+@media only screen and (max-width: 960px){
+
+h1 {
+	font-size: 4rem;
+	margin-right: 1rem;
+}
+.tomorrow {
+	font-size: 1.2rem
+}
+.left img {
+	width:30%;
+}
+.right-test-paper {
+	position: relative;
+}
+
+.right-test-paper-inner {
+	position: absolute;
+	top:15%;
+	padding: 0;
+	padding-left: 10%;
+	margin-bottom: -100px;
+}
+}
+
+@media only screen and (max-width: 750px){
+
+h1 {
+	font-size: 3.1rem;
+	margin-right: 1rem;
+}
+.tomorrow {
+	font-size: 1rem
+}
+}
+
+@media only screen and (max-width: 600px){
+
+
+.left {
+	padding-left:2rem;
+}
+}
+@media only screen and (max-width:600px){
+.left {
+	
+	padding-top:20%;
+}
+
+}
+@media only screen and (max-width:560px){
+#fullpage{
+
+	background-color: #FFDD67 
+}	
+.section {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.left {
+	height: 40%;
+	width: 100%;
+	padding-top:25%;
+}
+.left img {
+	display: none;
+}
+
+.right-test-paper{
+		height: 50%;
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+}
+.right-test-paper-inner{
+	padding-left: 6%
+}
+
+.right-test-paper-inner img{
+	width:95%;
+	margin-top: -100px;
+}
+.well-done {
+	font-size:3.5rem; 
+}
 }

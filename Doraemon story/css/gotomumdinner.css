@@ -77,9 +77,18 @@ h2 {
 }
 
 .bounce {
-  animation-name: bounce;
-   animation-duration: 2s ;
-   animation-iteration-count: infinite
+	opacity: 0;
+  animation-name: addon;
+   animation-duration:4s ;
+  animation-fill-mode: forwards;
+}
+@keyframes addon {
+	 from {
+    opacity: 0;
+  }
+	to {
+   opacity: 1;
+  }
 }
 
 .bounce p {
@@ -109,7 +118,7 @@ h2 {
 	background: linear-gradient(#667db6,#0082c8 ); }
 
 .askhelp-inner {
-	padding-top: 30%;
+	padding-top: 30vh;
 	padding-bottom: 40%;
 	padding-left: 10%;
 	padding-right:10%;
@@ -193,4 +202,92 @@ h2 {
 .section-4 a:hover:after { 
   width: 100%; 
   left: 0; 
+}
+
+@media (max-width: 560px) {
+.section-1{
+	background-position: left center
+}
+.left {
+width:100%;
+height: 60%;
+background-size: 85%
+}
+
+.askhelp {
+	width:100%;
+height: 30%;
+	background: rgba(0,0,0,0);
+}
+
+.askhelp-inner{
+	padding-top: 10vh;
+
+}
+
+.helpu {
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	padding-left: 0rem;
+	text-align: center;
+	color:#0082c8;
+}
+.not-use {
+font-size: 2.2rem;
+padding-top: 23vh;
+padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.section-4 .left-red  {
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top:0;
+}
+.use-wrapper {
+	width: 100%;
+	height: 50vh;
+
+}
+.not-use-wrapper {
+	padding-top: 0;
+}
+
+.use {
+	padding-top: 23vh;
+	font-size: 2.2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+}
+
+@media (min-width: 561px) and (max-width: 960px) {
+.section-1 {
+	background-position: left center
+}
+.section-2 {
+	display: flex;
+	flex-direction: column;
+}
+.left {
+	width:50vw;
+	background-size:80%;
+		float: left;
+}
+
+.askhelp{ 
+	float: left;
+	width:50vw;
+}
+.askhelp-inner {
+	padding-top: 30vh;}
+
+.helpu{
+	line-height: 2.1rem;
+	font-size: 1.8rem;
+	padding-right: 1rem;
+}
+
 }

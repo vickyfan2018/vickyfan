@@ -190,7 +190,7 @@ button:hover {
 	cursor: pointer
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
 
 .intro {
 	font-size: 2.5rem;
@@ -223,8 +223,8 @@ height: 50%;
 	text-align: center;
 }
 
-.section-1 {
-	background-position: top ;
+.left {
+	background-size: 60%;
 }
 .buttongroup {
 	width:100%;
@@ -236,5 +236,47 @@ height: 50%;
 	margin: auto;
 
 }
+.action-button {
+	font-size: 1.1rem
+}
+
+}
+
+@media (min-width: 561px) and (max-width: 960px) {
+.section-2 {
+	display: flex;
+	flex-direction: column;
+}
+.left {
+	width:50vw;
+	background-size:80%;
+		float: left;
+}
+
+.askhelp{ 
+	float: left;
+	width:50vw;
+}
+
+.askhelp-inner {
+	margin:auto;
+
+}
+
+.worry {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+.helpu{
+	line-height: 1.7rem;
+	font-size: 1.4rem;
+	padding-left: 0rem;
+}
+.action-button{
+	margin: 20px 10px 10px 0px;
+}
+
 
 }
