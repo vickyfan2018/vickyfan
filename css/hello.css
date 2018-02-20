@@ -29,8 +29,10 @@ header {
 }
 
 .section-1 {
+	height: 100%;
 	 background: linear-gradient(to right, #32B7D4 , #6EBB78);
 }
+
 
 
 .left {
