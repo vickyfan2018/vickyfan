@@ -203,7 +203,6 @@ animation-name: addon;
 	display: inline-block;
 	font-family: 'ProximaNovaBlack', sans-serif;
 	font-weight: 700;
-	width: 90%
 }
 .use-wrapper {
 
@@ -219,6 +218,8 @@ animation-name: addon;
  padding-top: 45vh;
 }
 
+
+/*section-2*/
 .section-4 a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;

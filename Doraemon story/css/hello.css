@@ -16,7 +16,7 @@
     font-weight:700;
 }
 
-.section-1 {
+.section-2 {
 	 background: url("../images/Big-dora-bg.jpg");
 	background-size: cover;
 	overflow: hidden;
@@ -68,26 +68,38 @@ h2 {
 	z-index: 2;
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
+  left: 50% ;
+  margin-left:-10px;
+  width: 20px;
+  height: 20px;
   background-image: url("../images/arrow.png");
   background-size: contain;
 }
 
 .bounce {
-  animation-name: bounce;
-   animation-duration: 2s ;
-   animation-iteration-count: infinite
+  animation-name: addon;
+  animation-duration: 5s ;
+  animation-delay: 2.5s ;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes addon {
+	 from {
+    opacity: 0;
+  }
+	to {
+   opacity: 0.5;
+  }
 }
 .bounce p {
 	position: absolute;
 	font-family: 'ProximaNovaBlack', sans-serif;
-	top:-50px;
+	top:-30px;
+	color: black;
+	font-size: 12px;
+	margin-left:-5px;
 }
 
-/*section-2 css*/
 .left {
 	background: url("../images/Doraemon.png");
 	width:50%;
@@ -98,7 +110,15 @@ h2 {
 	background-repeat: no-repeat;
 
 }
-
+.section-1 .left {
+	background: url("../images/nobita.jpg");
+	width:50%;
+	height: 100%;
+	float: left;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
+}
 .askhelp{ 
 	color: white;
 	width:50%;
@@ -106,6 +126,15 @@ h2 {
 	height: 100%;
 	background-color: #03A6D7;
 	display: table; }
+
+.section-1 .askhelp {
+	color: white;
+	width:50%;
+	float: right;
+	height: 100%;
+	background-color: #FAC63F;
+	display: table;
+}
 
 .askhelp-inner {
 	
@@ -196,12 +225,16 @@ button:hover {
 	font-size: 2.5rem;
 }
 
-.left {
+.section-1 .left {
+	background-position: top center;
+}
+
+.section-1 .left, .left {
 width:100%;
 height: 50%;
 }
 
-.askhelp {
+.section-1 .askhelp, .askhelp {
 	width:100%;
 	height: 50%;
 }
@@ -243,17 +276,20 @@ height: 50%;
 }
 
 @media (min-width: 561px) and (max-width: 960px) {
-.section-2 {
+.section-3, .section-1  {
 	display: flex;
 	flex-direction: column;
 }
-.left {
+
+.left, .section-1 .left  {
 	width:50vw;
 	background-size:80%;
 		float: left;
 }
 
-.askhelp{ 
+
+
+ .section-1 .askhelp ,.askhelp{ 
 	float: left;
 	width:50vw;
 }

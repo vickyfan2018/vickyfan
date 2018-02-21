@@ -205,19 +205,21 @@ h2 {
 }
 
 @media (max-width: 560px) {
+
 .section-1{
 	background-position: left center
 }
 .left {
 width:100%;
-height: 60%;
-background-size: 85%
+height: 50%;
+background-size: 85%;
+background-position: top center
 }
 
 .askhelp {
 	width:100%;
-height: 30%;
-	background: rgba(0,0,0,0);
+height: 50%;
+	
 }
 
 .askhelp-inner{
@@ -226,11 +228,10 @@ height: 30%;
 }
 
 .helpu {
-	font-size: 1.3rem;
-	line-height: 1.5rem;
+	font-size: 1.7rem;
+	line-height: 1.9rem;
 	padding-left: 0rem;
 	text-align: center;
-	color:#0082c8;
 }
 .not-use {
 font-size: 2.2rem;
