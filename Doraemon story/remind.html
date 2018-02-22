@@ -6,7 +6,30 @@
     <title>Doraemon Story</title>
     <link href="css/reset.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/remind.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+$('#fullpage').fadeIn();
+function newpage_yes () {
+window.location.href = "usetoastornot.html";
+}
+function newpage_no () {
+window.location.href = "fail.html";
+}
+$('.green').click(function() {
+event.preventDefault();
+newLocation = this.href;
+$('body').fadeOut(1000, newpage_yes);
+});
+
+$('.red').click(function() {
+event.preventDefault();
+newLocation = this.href;
+$('body').fadeOut(1000, newpage_no);
+});
+    });
+</script>
 
 
    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:300,400|Merriweather:400,700,900,900i" rel="stylesheet">

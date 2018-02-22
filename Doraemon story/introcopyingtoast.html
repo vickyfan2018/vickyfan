@@ -7,10 +7,9 @@
     <link href="css/reset.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/introcopyingtoast.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="js/hello.js"></script>
+
 
    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:300,400|Merriweather:400,700,900,900i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -20,10 +19,12 @@
   <main>
 
 <div id="fullpage">
+ <audio id="my_audio" src="./sounds/gadget.m4a"></audio>
   <div class="section section-1">
       <h1 class="toast-name">Memory Toast</h1><img src="./images/Doraemon hand.png" class="hand">
       <div class="arrow bounce fadein "><p>scroll down</p>
       </div>
+     
 	</div>
 
   <div class="section section-2">
@@ -41,18 +42,18 @@
 <div class="section section-4">
   <div class="left-red">
     <div class="not-use-wrapper">
-      <a href="fail.html" class="not-use">NOT use the toast</a></div></div>
+      <a href="fail.html" class="not-use fadeout-no">NOT use the toast</a></div></div>
   
   <div class="use-wrapper">
-  <a href="drag-on-book.html" class="use">Use the toast</a></div>
+  <a href="drag-on-book.html" class="use fadeout-yes">Use the toast</a></div>
   </div>
 
     
 </div>
 
+</div>
 
-
-
+<script type="text/javascript" src="js/hello.js"></script>
 </main>
   </body>
 </html>

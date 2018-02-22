@@ -10,6 +10,22 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+$('body').fadeIn();
+ setTimeout(function () {
+       $("#my_audio").get(0).play();}, 2500); 
+  
+function newpage_yes () {
+window.location.href = "index.html";
+}
+$('.playagain').click(function() {
+event.preventDefault();
+newLocation = this.href;
+$('body').fadeOut(1000, newpage_yes);
+});
+    });
+</script>
    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:300,400|Merriweather:400,700,900,900i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/fail.css">
@@ -17,7 +33,7 @@
   <body>
 
   <main>
-
+<audio id="my_audio" src="./sounds/Fail.m4a"></audio>
 <div id="fullpage">
   <div class="section section-1"><img src="./images/failed-exam-paper.png">
       <h2 class="tomorrow">Tomorrow...</h2>

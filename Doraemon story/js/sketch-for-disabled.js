@@ -1,5 +1,5 @@
 $(document).ready(function(){
-       
+       $('body').fadeIn();
        $("#draggable").draggable(function(){
         
             
@@ -15,10 +15,14 @@ stop: handleDragStop
 function handleDragStop( event, ui ) {
   var offsetXPos = parseInt( ui.offset.left );
   var offsetYPos = parseInt( ui.offset.top );
+  $("#my_audio").get(0).play();
   $("#error").fadeIn();
         setTimeout(function () {
+           $('#error').fadeOut();
        window.location.href = "fail.html";
-    }, 1000); 
+    }, 2500); 
+
+    
 }
 
 

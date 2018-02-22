@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Doraemon Story</title>
     <link href="css/reset.css" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+$('#fullpage').fadeIn();
+ setTimeout(function () {
+       $("#my_audio").get(0).play();}, 3500); 
+function newpage_yes () {
+window.location.href = "index.html";
+}
+$('.playagain').click(function() {
+event.preventDefault();
+newLocation = this.href;
+$('body').fadeOut(1000, newpage_yes);
+});
+    });
+</script>
 
    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:300,400|Merriweather:400,700,900,900i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -17,7 +31,7 @@
   <body>
 
   <main>
-
+<audio id="my_audio" src="./sounds/Fail.m4a"></audio>
 <div id="fullpage">
   <div class="section section-1"><div class="image-wrapper"><img src="./images/nobita-run.png"></div>
       <h2 class="tomorrow">Tomorrow...</h2>

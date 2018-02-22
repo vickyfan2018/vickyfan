@@ -15,7 +15,9 @@
     src: url("../fonts/Brandon_blk.otf");
     font-weight:700;
 }
-
+#fullpage {
+	display:none;
+}
 .section-2 {
 	 background: url("../images/Big-dora-bg.jpg");
 	background-size: cover;

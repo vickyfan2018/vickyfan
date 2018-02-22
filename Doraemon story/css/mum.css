@@ -15,7 +15,9 @@
     src: url("../fonts/Brandon_blk.otf");
     font-weight:700;
 }
-
+#fullpage {
+	display:none;
+}
 .section-1 {
 	i
 	position: relative;

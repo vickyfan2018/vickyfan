@@ -16,8 +16,8 @@
     font-weight:700;
 }
 
-.section-1 {
-
+#fullpage {
+	display:none;
 }
 
 .section {
