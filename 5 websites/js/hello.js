@@ -3,7 +3,7 @@ $(document).ready(function(){
 var my4Element = $('.section-4');
 var my3Element = $('.section-3');
 var my2Element = $('.section-2');
-var my6Element = $('.section-5');
+var my5Element = $('.section-5');
 var my6Element = $('.section-6');
 $(window).on('scroll', function() {
     var st = $(this).scrollTop();
@@ -25,13 +25,13 @@ $(window).on('scroll', function() {
 $(window).on('scroll', function() {
     var st = $(this).scrollTop();
     my5Element.css({
-        'opacity' :5 - st/600
+        'opacity' :5.5 - st/600
     });
-  });
+   });
 $(window).on('scroll', function() {
     var st = $(this).scrollTop();
     my6Element.css({
-        'opacity' :6 - st/600
+        'opacity' :6.5 - st/600
     });
   });
 });
