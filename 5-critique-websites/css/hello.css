@@ -23,7 +23,7 @@ header {
 	width:80%;
 	text-align: center;
 	margin-left: 10%;
-	padding-top: 30vh;
+	padding-top: 20vh;
 }
 
 
@@ -36,6 +36,7 @@ h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	font-size: 8rem;
+	margin-bottom: 1rem;
 }
 
 h2 {
@@ -44,6 +45,36 @@ h2 {
 	font-weight: 700;
 	
 }
+
+ul {
+	padding-top: 0.5rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em
+}
+
+li {
+	padding-bottom: 0.4rem
+}
+
+li > a {
+	position: relative;
+}
+
+li > a::after {
+    content: '';
+    position: absolute;
+    left: 0; 
+    bottom: -5px;
+    height: 1px;
+    background-color: black;
+    width: 0;
+    transition: width .4s;
+
+  }
+
+li > a:hover::after  {
+ 	width: 100%;
+ }
 
 .section-2, .section-3, .section-4, .section-5, .section-6 {
 		padding-top: 10vh;
@@ -207,7 +238,9 @@ footer p {
 
 @media (max-width: 960px) {
  /*text on the right and images on the right section*/
-
+.center {
+	padding-top: 30vh
+}
 .right-container  {
 	padding-left: 3em;
 }
@@ -292,13 +325,17 @@ padding-right: 0vw;
 }
 }
 
+@media  (max-width: 685px) {
+.center {
+	padding-top: 25vh
+}
+}
+
 @media  (max-width: 600px) {
 	h1 {
 	font-size: 5rem;
 }
-.center {
-	padding-top: 30vh
-}
+
 h2 {
 		font-size: 1.8rem;
 	}
@@ -313,9 +350,13 @@ h3 {
 	font-size: 3.2rem;
 }
 .center {
-	padding-top: 40vh
+	padding-top: 30vh
 }
 h2 {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
+
+ul {
+	font-size: 0.9rem;
+}
 }
