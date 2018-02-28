@@ -81,6 +81,7 @@ li > a:hover::after  {
 		padding-bottom: 10vh;
 		padding-left: 5vw;
 		padding-right: 5vw;
+		position: relative;
 }
 
 .section-2 {
@@ -102,6 +103,15 @@ li > a:hover::after  {
 
 .section-6 {
 	background: #191919;
+}
+
+.back-to-top {
+	color: #414141;
+	position: absolute;
+	bottom:0.8rem;
+	right:0.8rem;
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
 }
 
 .flexbox {
@@ -270,6 +280,9 @@ p {
 }
 h2 {
 		font-size: 1.9rem;
+	}
+.back-to-top {
+	font-size: 0.9em;
 	}
 }
 
