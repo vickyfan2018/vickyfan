@@ -1,0 +1,329 @@
+@font-face {font-family: "Mont-SemiBold";src: url("../fonts/Mont-SemiBold.ttf");}
+@font-face {font-family: "Mont-Regular";src: url("../fonts/Mont-Regular.ttf");}
+@font-face {font-family: "Mont-Bold";src: url("../fonts/Mont-Bold.ttf");}
+@font-face {font-family: "Gliny-Brush";src: url("../fonts/Gliny-Brush.ttf");}
+@font-face {font-family: "plantin";src: url("../fonts/plantin.otf");}
+
+body {
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	from {opacity: 0} to
+	{
+		opacity: 1;
+	}
+}
+
+/*navigation */
+nav {
+  font-family: Mont-Bold, Helvetica, sans-serif;
+  z-index: 10;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top:0;
+}
+
+.logo {
+  padding: 1rem 1rem;
+  margin-left: 0.3rem;
+}
+
+.nav-list {
+    padding: 1.5rem 1.5rem;
+    float:right;
+}
+
+.nav-item {
+  display: inline-block;
+  width:7rem;
+  font-size: 1.2rem;
+    text-align: center;
+   color:white;
+    padding-top: 0.2rem;
+}
+ 
+ .nav-list a {
+  text-decoration: none;
+ }
+
+.nav-hover:hover {
+  color:brown;
+}
+
+.icon {
+    display: none;
+    color: white;
+}
+
+.icon:hover {
+  color:brown;
+}
+
+@media (max-width: 900px) {
+a.icon {
+    float: right;
+    display: block;
+    padding:1.25rem;
+    padding-top: 1.75rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+.nav-list  {
+	display: none;
+}
+
+.nav-list.responsive   {
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    height: 200px;
+    width:20%; 
+    padding: 0;
+    position: absolute;
+    bottom:-200px;
+    right:0;
+    animation-name: shownav;
+    animation-duration: 1s;
+  }
+
+@keyframes shownav{
+	0% {opacity: 0;
+		transform: translateY(-150vw;);}
+	100% {opacity: 1;
+		transform: translateX(50vw;);}
+}
+
+.nav-item{
+	width: 100%;
+	padding-top: 1.2rem;
+}
+
+.nav-list.responsive a {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.nav-list.responsive a:last-child{
+	padding-bottom: 1rem;
+} 
+
+
+}
+@media (max-width: 550px) {
+	.nav-list {
+	font-size: 1.1rem;
+	 padding-right: 0.2rem;
+}
+}
+
+/*header style*/
+
+header {
+	display: grid;
+	grid-template-columns: 20vw 60vw 20vw;
+	grid-template-rows: 33.3% 33.3% 33.3% ;
+	height: 100vh;
+	background-image: url("../image/index-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.greeting {
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	grid-row: 2/3;
+	color: white;
+	text-align: center;
+	align-self: center;
+}
+
+h1 {
+	opacity: 0;
+	font-family: Gliny-Brush;
+	font-size: 6.192em;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+h2 {
+	opacity: 0;
+	font-family: Mont-SemiBold;
+	font-size: 1.928em;
+	padding-top: 0.2em;
+		animation-name: fadein;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@media (max-width: 1070px) {
+	h1 {
+	font-size: 5.16em;
+	}
+	h2 {
+	font-size: 1.728em;
+	}
+}
+
+@media (max-width: 900px) {
+	header {
+	grid-template-columns: 10vw 80vw 10vw;} 	
+}
+
+@media (max-width: 689px) {
+	header {
+	grid-template-columns: 5vw 90vw 5vw;} 	
+	h1 {
+	font-size:4.3em;
+	}
+	h2 {
+	font-size: 1.44em;
+	}
+
+}
+
+@media (max-width: 550px) {
+	header {
+	grid-template-columns: 8vw 84vw 8vw;} 	
+	h1 {
+	font-size:3.583em;
+	}
+	h2 {
+	font-size: 1.2em;
+	}
+
+}
+
+@media (max-width: 450px) {
+	header {
+		width:100%;
+	grid-template-columns: 90vw;
+	padding-left:5vw;
+	padding-right: 5vw;
+}
+	.greeting {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+}
+	h1 {
+	font-size:2.986em;
+	}
+	h2 {
+	font-size: 1em;
+	}
+
+}
+
+/*my-value*/
+#myvalue{
+	height: 40vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	margin-top: 10vh;
+	margin-bottom: 15vh;
+}
+
+h3 {
+	font-family: Mont-Bold;
+	color: #7E2723;
+	height: 20%;
+	text-align: center;
+	font-size: 1.728rem;
+}
+
+.my-values-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+h4 {
+	font-family: Mont-Bold;
+	font-size: 1.44rem;
+	color: #FFCC5C;
+}
+
+.myvalue-1, .myvalue-2, .myvalue-3 {
+	width: 26%;
+	text-align: center;
+	margin-left: 3.66%;
+	margin-right: 3.66%;
+}
+
+.freedom-photo, .independence-photo, .dedication-photo {
+	width:100%;
+	height: 25vh;
+	background-image: url("../image/1.jpg");
+	margin-bottom: 4vh;
+	margin-top: 4vh;
+	background-size: cover;
+	background-position: top;
+}
+
+.independence-photo {
+	background-image: url("../image/independence.jpg");
+}
+
+.dedication-photo {
+	background-image: url("../image/dedication.jpg");
+}
+
+@media (max-width: 1000px) {
+	#myvalue {
+	padding-left: 3vw;
+	padding-right: 3vw;
+	}
+}
+
+@media (max-width: 700px) {
+	#myvalue{
+	margin-bottom: 10vh;
+}
+	h3{
+	font-size: 1.44rem;	
+	}
+	h4 {
+	font-size: 1.2em
+	}
+
+}
+
+@media (max-width: 650px) {
+	#myvalue {
+		height: 100%;
+	}
+	.myvalue-1, .myvalue-2, .myvalue-3 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vh;
+}
+	h3{
+		margin-bottom: 5vh;
+	}
+}
+/*footer*/
+footer {
+	padding-top: 5vh;
+	padding-bottom: 5vh;	
+	background-color: #5C9999;
+}
+
+footer > p {
+	text-align: center;
+	font-family: Mont-Regular;
+	padding: 0.3rem 0 0 0;
+	color: white;
+	font-size:0.833em;
+	margin: 0;
+}
+
+
+
