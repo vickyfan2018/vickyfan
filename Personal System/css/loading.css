@@ -25,7 +25,7 @@ background-size: contain;
   height: 10px;
   opacity: 0;
   animation-name: spin;
-  animation-duration: 1.8s;
+  animation-duration: 2.62s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -221,7 +221,83 @@ i:nth-child(35) {
   animation-delay: 1.69354839s;
 }
 
+i:nth-child(36) {
+  transform: rotate(740deg) translate3d(80px, 0, 0);
+  animation-delay: 1.73s;
+}
+i:nth-child(37) {
+  transform: rotate(760deg) translate3d(80px, 0, 0);
+  animation-delay: 1.78s;
+}
+i:nth-child(38) {
+  transform: rotate(780deg) translate3d(80px, 0, 0);
+  animation-delay: 1.83s;
+}
+i:nth-child(39) {
+  transform: rotate(800deg) translate3d(80px, 0, 0);
+  animation-delay: 1.88s;
+}
+i:nth-child(40) {
+  transform: rotate(820deg) translate3d(80px, 0, 0);
+  animation-delay: 1.93s;
+}
+i:nth-child(41) {
+  transform: rotate(840deg) translate3d(80px, 0, 0);
+  animation-delay: 1.98s;
+}
+i:nth-child(42) {
+  transform: rotate(860deg) translate3d(80px, 0, 0);
+  animation-delay: 2.03s;
+}
+i:nth-child(43) {
+  transform: rotate(880deg) translate3d(80px, 0, 0);
+  animation-delay: 2.08s;
+}
+i:nth-child(44) {
+  transform: rotate(900deg) translate3d(80px, 0, 0);
+  animation-delay: 2.13s;
+}
+i:nth-child(45) {
+  transform: rotate(920deg) translate3d(80px, 0, 0);
+  animation-delay: 2.18s;
+}
+i:nth-child(46) {
+  transform: rotate(940deg) translate3d(80px, 0, 0);
+  animation-delay: 2.23s;
+}
 
+i:nth-child(47) {
+  transform: rotate(960deg) translate3d(80px, 0, 0);
+  animation-delay: 2.28s;
+}
+i:nth-child(48) {
+  transform: rotate(980deg) translate3d(80px, 0, 0);
+  animation-delay: 2.33s;
+}
+i:nth-child(49) {
+  transform: rotate(1000deg) translate3d(80px, 0, 0);
+  animation-delay: 2.38s;
+}
+i:nth-child(50) {
+  transform: rotate(1020deg) translate3d(80px, 0, 0);
+  animation-delay: 2.43s;
+}
+i:nth-child(51) {
+  transform: rotate(1040deg) translate3d(80px, 0, 0);
+  animation-delay: 2.48s;
+}
+i:nth-child(52) {
+  transform: rotate(1060deg) translate3d(80px, 0, 0);
+  animation-delay: 2.53s;
+}
+i:nth-child(53) {
+  transform: rotate(1080deg) translate3d(80px, 0, 0);
+  animation-delay: 2.58s;
+}
+i:nth-child(54) {
+  transform: rotate(1100deg) translate3d(80px, 0, 0);
+  animation-delay: 2.62s;
+}
 @keyframes spin {
   from {
     opacity: 0.1;
@@ -281,5 +357,8 @@ i:nth-child(35) {
   animation-delay: 2.5s;
 }
 .loading p:nth-child(7) {
+  animation-delay: 3s;
+}
+.loading p:nth-child(8) {
   animation-delay: 3s;
 }

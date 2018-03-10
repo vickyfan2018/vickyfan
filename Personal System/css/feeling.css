@@ -26,6 +26,7 @@ nav {
   height: 10vh;
   position: fixed;
   top:0;
+  background-color: white;
 }
 
 .logo {
@@ -373,6 +374,8 @@ position: relative;
   backface-visibility: hidden;
 }
 
+
+
 .flip-back{
   position:absolute;
   top:20px;
@@ -411,8 +414,9 @@ position: relative;
 .back-info h6 {
   font-family: plantin ;
    font-size: 1.5rem;
-    padding-top: 80px;
+    padding-top: 20px;
      padding-left: 10px;
+     line-height: 1.8rem
 }
 
 .back-info p {
