@@ -1,0 +1,166 @@
+@font-face {font-family: "Mont-SemiBold";src: url("../fonts/Mont-SemiBold.ttf");}
+@font-face {font-family: "Mont-Regular";src: url("../fonts/Mont-Regular.ttf");}
+@font-face {font-family: "Mont-Bold";src: url("../fonts/Mont-Bold.ttf");}
+@font-face {font-family: "Gliny-Brush";src: url("../fonts/Gliny-Brush.ttf");}
+@font-face {font-family: "plantin";src: url("../fonts/plantin.otf");}
+
+
+/*header style*/
+body {
+background-image: url("../image/moon.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  
+}
+
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+  
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+
+  }
+}
+
+
+.animated {
+   width:60%;
+  height: 100vh;
+  color: white;
+font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-rows: 35% 30% 35%;
+  grid-template-columns: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+h2 {
+   font-size: 1.5em;
+}
+
+.lookup {
+    grid-row: 2 /span 1;
+  grid-column: 1/ span 1;
+   align-self: center;
+    text-align: center;
+}
+
+.moon {
+    grid-row: 1 /span 1;
+  grid-column: 1/ span 1;
+   align-self: center;
+    text-align: center;
+}
+
+.animated .animation-delay-0 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-font-smoothing: antialiased;
+}
+.animated .animation-delay-1 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.5s;
+  -webkit-font-smoothing: antialiased;
+}
+.animated .animation-delay-2 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 1s;
+}
+.animated .animation-delay-3 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 1.5s;
+}
+.animated .animation-delay-4 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94), flash 2s ease-out alternate infinite;
+  animation-delay: 2s;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: rgb(254,236,133);
+}
+.animated .animation-delay-5 {
+	opacity: 0;
+	animation: blurIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94), flash 2s ease-out alternate infinite;
+  animation-delay: 3s;
+  font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    color:rgb(254,236,133);
+}
+
+
+.line-arrow {
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 8px; /*set the size for arrow*/
+    width: 4em;
+    height: 4em;
+    margin-top: -2em;
+    top: 50%;
+}
+
+.line-arrow.left {
+    border-top: 2px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    transform: rotate(-54deg) skew(-20deg);
+    left: 30px;
+}
+
+.line-arrow.right {
+    border-top: 2px solid #a9a9a9;
+    border-right: 2px solid #a9a9a9;
+    transform: rotate(54deg) skew(20deg);
+    right: 20px;
+}
+
+.line-arrow.right:hover {
+border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.line-arrow.left:hover {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.square {
+  top: auto;
+  bottom: 10%;
+  margin-right: 2.5%;
+}
+
+.square.left {
+  transform: rotate(-45deg);
+}
+
+.square.right {
+  transform: rotate(45deg);
+}
+
+
+@keyframes flash {
+  0% {
+      text-shadow: 0 0 20px rgb(254,252,201) ;
+  }
+  100% {
+  text-shadow: 0 0 20px rgb(254,252,201) , 10px -10px 30px rgb(254,236,133) , -15px -18px 40px rgba(255,197,112,1) ;
+  }
+
+}
