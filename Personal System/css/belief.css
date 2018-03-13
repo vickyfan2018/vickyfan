@@ -26,6 +26,7 @@ nav {
   height: 10vh;
   position: fixed;
   top:0;
+  background-color: white;
 }
 
 .logo {
@@ -69,7 +70,7 @@ a.icon {
     float: right;
     display: block;
     padding:1.25rem;
-    padding-top: 1.75rem;
+    padding-top: 1.50rem;
     font-size: 1.5rem;
     position: relative;
   }
@@ -89,6 +90,7 @@ a.icon {
     right:0;
     animation-name: shownav;
     animation-duration: 1s;
+    right:15px;
   }
 
 @keyframes shownav{

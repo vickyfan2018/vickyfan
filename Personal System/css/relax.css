@@ -69,7 +69,7 @@ a.icon {
     float: right;
     display: block;
     padding:1.25rem;
-    padding-top: 1.75rem;
+    padding-top: 1.5rem;
     font-size: 1.5rem;
     position: relative;
   }
@@ -89,6 +89,7 @@ a.icon {
     right:0;
     animation-name: shownav;
     animation-duration: 1s;
+    right:15px;
   }
 
 @keyframes shownav{
@@ -107,6 +108,7 @@ a.icon {
     display: block;
     font-size: 1.5rem;
     z-index: 10;
+    color: white;
 }
 
 .nav-list.responsive a:last-child{
