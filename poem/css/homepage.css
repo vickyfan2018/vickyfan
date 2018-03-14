@@ -13,7 +13,7 @@ background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  
+  position: relative;
 }
 
 @keyframes blurIn {
@@ -109,7 +109,6 @@ font-family: 'Simonetta', cursive;
   animation-delay: 4.5s;
 font-family: 'Simonetta', cursive;
 }
-
 .line-arrow {
     position: absolute;
     overflow: hidden;
@@ -122,10 +121,10 @@ font-family: 'Simonetta', cursive;
 }
 
 .line-arrow.left {
-    border-top: 1px solid #a9a9a9;
-    border-left: 1px solid #a9a9a9;
+    border-top: 2px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
     transform: rotate(-54deg) skew(-20deg);
-    left: 20px;
+    left: 30px;
 }
 
 .line-arrow.right {
@@ -133,6 +132,15 @@ font-family: 'Simonetta', cursive;
     border-right: 2px solid #a9a9a9;
     transform: rotate(54deg) skew(20deg);
     right: 20px;
+}
+
+a {
+  color: #848484;
+position: absolute;
+    bottom: 3vh;
+    padding-left: 25px;
+    font-size: 0.8rem;
+    font-family: 'Crimson Text', serif;
 }
 
 .line-arrow.right:hover {
