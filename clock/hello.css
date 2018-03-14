@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+		display:grid;
+	grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  height: 100vh;
+}
+
+p {
+	display:inline;
+	color:white;
+	font-size: 2.5em;
+}
+
+.wrap {
+	text-align: center;
+	font-family: 'Merriweather', serif;
+grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: span 1 ;
+ align-self: center; 
+}
+
+h1 {
+	font-size: 3.5em;
+	color:white;
+	font-family: 'Merriweather', serif;
+}
+
