@@ -86,31 +86,47 @@
         })
     }
   });
-
+$('.tri').click(function(){
   $('#section-3').one('inview', function(event, isInView) {
     $(event.target).addClass('run-animation');
     if (isInView) {
 
-    var morphing = anime({
-  targets: '#morphing .polymorph',
-  points: [
-    { value: '718,292.506 606.993,356.861 607.12,227.933' },
-    { value: '1217.969,306.514 1107,331.861 1107.05,280.948 ' }
+var basicTimeline = anime.timeline({
+  loop:true,
+   direction: 'alternate',
+});
+
+       basicTimeline
+       .add({
+          targets: '.akb',
+          translateX: 390,
+        duration: 500,
+          width: 300,
+          elasticity: 1000, 
+        easing: 'easeInExpo'
+        })
+        .add({
+          targets: '#morphing .polymorph',
+points: [
+    { value: '732.658,377.667 575.643,469.986 574.199,287.847 ' },
+    { value: '1366.341,378.401 1209,429.66 1208.207,329.643 ' }
   ],
   easing: 'easeOutQuad',
   duration: 2000,
   loop: true,
 fill: [
-    {value: '#FFFF00'}, // Or #FFFFFF
-    {value: '#F0E68C'},
+    {value: '#FF931E'}, 
+    {value: '#FF931E'},
     {value: '#FFFFE0'}
   ],
    elasticity: 500,
    direction: 'alternate',
-});
-
+       })
 
     }
+
+})
+    
 
 
   });
@@ -123,10 +139,46 @@ if (isInView) {
     loop:true
   });
       basicTimeline.add({
-          targets: '#lineis .trial path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
+          targets: '#lineis .trial .first',
+  strokeDashoffset: [anime.setDashoffset, 10],
+  easing: 'easeInOutQuad',
   duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true,
+       })
+.add({
+          targets: '#lineis .trial .second',
+  strokeDashoffset: [anime.setDashoffset, 0],
+   easing: 'easeInOutQuad',
+  duration: 300,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true,
+       })
+.add({
+          targets: '#lineis .trial .third',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutQuart',
+  duration: 5500,
+  delay: function(el, i) { return i * 250 },
+ 
+  loop: true,
+       })
+.add({
+          targets: '#lineis .trial .forth',
+  strokeDashoffset: [anime.setDashoffset, 10],
+  easing: 'easeInOutQuad',
+  duration:1800,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true,
+       })
+.add({
+          targets: '#lineis .trial .fifth',
+  strokeDashoffset: [anime.setDashoffset, 10],
+   easing: 'easeInOutQuad',
+  duration:4000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
   loop: true,
