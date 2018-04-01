@@ -1,0 +1,104 @@
+body {
+	background-color: black;
+	display: grid;
+	 grid-template-columns:100%;
+  grid-template-rows: 33.3% 7.5% 40% 15%;
+  height: 100vh;
+}
+
+p {
+	display:inline;
+	color:white;
+	font-size: 1.5em;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+input, button {
+	color: black;
+	text-align: center;
+	border-radius: 2px;
+	padding: 5px;
+	border: none;
+}
+button {
+	background-color: #FCD117;	
+	opacity: 0.8;
+	margin:1em;
+	padding: 1em;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+button:hover {
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+		 grid-row-start: 3;
+   grid-row-end: span 1;
+ align-self: center;
+ text-align: center;
+ font-family: 'Merriweather Sans', sans-serif;
+}
+.input {
+ padding: 1em;
+}
+
+
+h1 {
+	font-size: 2.2em;
+	color:white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	 grid-row-start: 1;
+  grid-row-end: span 1;
+  align-self: center;
+  line-height: 1.5em
+}
+
+
+li {
+	grid-row-start: 2;
+  grid-row-end: span 1;
+  display: grid;
+   grid-template-columns:16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+  grid-template-rows: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+li p {
+	text-align: center;
+	color:#EA5B0C;
+}
+
+
+#result{
+		 grid-row-start: 4;
+  grid-row-end: span 1;
+font-size: 1.5em;
+	color:white;
+	font-family: 'Merriweather', serif;
+	 align-self: top;
+ text-align: center;
+}
+
+#l1 p:nth-child(1){
+	color: yellow;
+}
+#l1 p:nth-child(2){
+	color: #f442b0;
+}
+#l1 p:nth-child(3){
+	color: red;
+}
+#l1 p:nth-child(4){
+	color: #b241f4;
+}
+#l1 p:nth-child(5){
+	color: #d3f441;
+}
+#l1 p:nth-child(6){
+	color: #fcc437;
+}
