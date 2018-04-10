@@ -56,7 +56,7 @@ function WidthChange(mq) {
 
 // logo animation
 
-$('.first-section').on('inview', function(event, isInView) {
+$('#lineis').on('inview', function(event, isInView) {
     $(event.target).addClass('run-animation');
 
 if (isInView) {
@@ -66,12 +66,12 @@ if (isInView) {
   targets: '#lineis .trial .second',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 3000,
        })
     }
   });
 
-$('.second-section').on('inview', function(event, isInView) {
+$('#lineis2').on('inview', function(event, isInView) {
     $(event.target).addClass('run-animation');
 
 if (isInView) {
@@ -81,13 +81,13 @@ if (isInView) {
   targets: '#lineis2 .trial .second',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 3000,
        })
     }
   });
 
 
-$('.third-section').on('inview', function(event, isInView) {
+$('#lineis3').on('inview', function(event, isInView) {
     $(event.target).addClass('run-animation');
 
 if (isInView) {
@@ -97,7 +97,7 @@ if (isInView) {
   targets: '#lineis3 .trial .second',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 3000,
        })
     }
   });

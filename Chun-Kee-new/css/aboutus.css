@@ -109,8 +109,16 @@ a.icon {
 /*heading style*/
 
 .heading {
-    height: 50vh;
+    height: 80vh;
     margin-top: 85px;
+    background-image: url("../image/aboutus-bg.png");
+    background-size: cover;
+    background-position: left center;
+}
+
+#logoanimation {
+  width:30vw;
+  display: inline;
 }
 
 h2 {
@@ -235,23 +243,15 @@ p {
 
 
 
-@media (max-width: 1000px) {
-  .first-section, .third-section {
-  height: 55vh;
-}
-.second-section {
-  height: 55vh;
-}
 
-}
 
 
 @media (max-width: 750px) {
   .first-section, .third-section {
-  height: 50vh;
+  height: 60vh;
 }
 .second-section {
-  height: 50vh;
+  height: 60vh;
 }
  p {
   font-size: 1rem;
@@ -262,7 +262,7 @@ p {
 
 @media (max-width: 520px) {
  .first-section{
-  height: 90vh;
+  height: 100vh;
 }
 .second-section {
   height: 100vh;
@@ -272,7 +272,8 @@ p {
 }
 
 .third-section {
-  height: 90vh;
+  height: 110vh;
+  padding-bottom: 5vh
 }
 
 

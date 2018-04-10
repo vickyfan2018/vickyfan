@@ -1,0 +1,308 @@
+@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+
+body {
+  background: #F5F5F5;
+}
+
+
+/*heading style*/
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  padding: 1.25rem 1.25rem;
+
+}
+.nav-list {
+    padding: 1rem 1rem;
+    font-family: Baskerville, Song-Md;
+    float:right;
+}
+
+.nav-item {
+  display: inline-block;
+  width:7rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  padding:0.25rem;
+  line-height: 1.1em;
+}
+ 
+.nav-hover:hover {
+  color:brown;
+}
+
+.icon {
+    display: none;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes height {
+    from {  height: 0px}
+    to {   height: 190px}
+}
+
+
+
+@media (max-width: 900px) {
+a.icon {
+    float: right;
+    display: block;
+    padding:1.25rem;
+    padding-top: 1.5rem;
+   font-size: 1rem;
+   font-family: Baskerville, Song-Md;
+   text-align: center;
+   line-height: 1.2rem;
+  }
+.nav-list  {
+  display: none;
+}
+
+
+
+.nav-list.responsive   {
+  background-color: white;
+    display:flex;
+    flex-direction: column;
+
+    height: 190px;
+    width:100%; 
+    padding-top: 0.25rem; 
+      animation: opacity 1s, height 0.5s;
+  }
+.nav-item{
+  width: 100%;
+  padding-top: 0.5rem;
+        animation: opacity 2s, height 2.5s;
+}
+
+.nav-list.responsive a:nth-child(4){
+  padding-bottom:0.5rem;
+}
+
+.nav-list.responsive a {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+
+}
+
+
+}
+
+/*heading style*/
+.heading {
+  margin-top: 85px;
+  padding-left: 7vw;
+  padding-top: 8vh;
+  background-color: rgba(175,153,94,0.2);
+}
+
+h2 {
+  font-family: Baskerville, Song-Md;
+  font-size: 2.5rem;
+  color: #981914;
+}
+
+.h2-eng {
+  color:#866e5d;
+}
+
+.white-color {
+  color:white;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+   font-family: Baskerville, Song-Md;
+   color:#583C2A;
+   margin-top: 0.9rem;
+   text-align: center;
+}
+
+.p-eng {
+  color:#866E5D;
+  marker-bottom:0.5rem;
+  margin-top: 0rem;
+}
+
+
+.learnmore {
+  font-family: Baskerville, Song-Md;
+  font-size: 1.2rem;
+  background-color:#981914;
+  padding: 0.5rem;
+  border:none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+
+
+
+/*media-general*/
+.media-wrapper {
+  width:100vw;
+  padding: 7vw;
+  background-color: rgba(175,153,94,0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.media-card {
+  flex-basis: 43vw;
+  height: 50vh;
+}
+
+.black-wrapper {
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.black-wrapper:hover {
+  opacity: 0
+}
+
+.black-wrapper a {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+}
+
+.media-card h4 {
+  text-align: center;  
+}
+
+ 
+
+
+.media-1 {
+  background-image: url("../image/media-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.media-2 {
+  background-image: url("../image/media-2.png");
+  background-position: center;
+  background-size: cover
+}
+
+
+@media (max-width: 500px) {
+.media-wrapper {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.media-card {
+  flex-basis: 90vw;
+  height: 50vh;
+}
+}
+
+/*follow us on fb*/
+h4 {
+   font-family: Baskerville, Song-Md;
+  font-size: 1.5rem;
+}
+
+.white-color {
+  color:white;
+}
+
+.findus-heading {
+  color: white;
+}
+
+
+.social-link {
+    width: 100vw;
+  height: 50vh;
+  background-color: #583c2a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   padding:8vh 5vw 3vh 5vw;
+}
+
+.social-link-head {
+  flex-basis: 40vw;
+}
+.social-link-head h4 {
+  line-height: 1.8rem
+}
+.facebook-container{
+  text-align: center;
+  flex-basis: 40vw;
+}
+
+#facebook {
+  height: 30vh;
+  width: 40vw;
+}
+
+@media (max-width: 900px) {
+.social-link-head {
+    margin-left: 5vw;
+}
+.facebook-container{
+  margin-left: 5vw
+ 
+}
+}
+@media (max-width: 460px) {
+.social-link {
+  height: 70vh;
+}
+.facebook-container{
+  flex-basis: 90vw;
+   margin-left: 0
+}
+.social-link-head {
+  flex-basis: 90vw;
+}
+#facebook {
+  margin-top: 5vh;
+  width: 80vw;
+}
+}
+
+/*footer*/
+footer {
+  background-color: #3D2211;
+  height: 10vh;
+    text-align: center;
+}
+
+footer p {
+  color: white;
+  font-family: Baskerville, Song-Md;
+  padding-top: 2.5vh;
+  margin:0px;
+}

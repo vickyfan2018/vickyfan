@@ -1,6 +1,5 @@
 @font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
 @font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
-@font-face {font-family: "Song-Lt";src: url("../fonts/Song-Lt.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
 
 body {
@@ -9,6 +8,7 @@ body {
 
 
 /*heading style*/
+
 
 header {
   position: fixed;
@@ -168,11 +168,16 @@ h2 {
 }
 .heading img {
   width: 35vw;
+  margin-left: 32.2vw
 }
-
+.pswp img {
+  margin-left: 0vw
+}
 .noodle-option {
   width:100vw;
 }
+
+
 
 h3 {
    font-family: Baskerville, Song-Md;
@@ -201,6 +206,10 @@ color: #866e5d;
 @media (max-width: 1050px){
   .heading img {
   width: 60vw;
+  margin-left: 20vw;
+}
+.pswp img {
+  margin-left: 0vw
 }
 }
 
@@ -458,3 +467,4 @@ footer p {
   padding-top: 2.5vh;
   margin:0px;
 }
+
