@@ -1,0 +1,409 @@
+@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Song-Lt";src: url("../fonts/Song-Lt.ttf");}
+@font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+
+body {
+  background: #F5F5F5;
+}
+
+
+/*heading style*/
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  padding: 1.25rem 1.25rem;
+
+}
+.nav-list {
+    padding: 1rem 1rem;
+    font-family: Baskerville, Song-Md;
+    float:right;
+}
+
+.nav-item {
+  display: inline-block;
+  width:7rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  padding:0.25rem;
+  line-height: 1.1em;
+}
+ 
+.nav-hover:hover {
+  color:brown;
+}
+
+.icon {
+    display: none;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes height {
+    from {  height: 0px}
+    to {   height: 190px}
+}
+
+
+
+@media (max-width: 900px) {
+a.icon {
+    float: right;
+    display: block;
+    padding:1.25rem;
+    padding-top: 1.5rem;
+   font-size: 1rem;
+   font-family: Baskerville, Song-Md;
+   text-align: center;
+   line-height: 1.2rem;
+  }
+.nav-list  {
+  display: none;
+}
+
+
+
+.nav-list.responsive   {
+  background-color: white;
+    display:flex;
+    flex-direction: column;
+
+    height: 190px;
+    width:100%; 
+    padding-top: 0.25rem; 
+      animation: opacity 1s, height 0.5s;
+  }
+.nav-item{
+  width: 100%;
+  padding-top: 0.5rem;
+        animation: opacity 2s, height 2.5s;
+}
+
+.nav-list.responsive a:nth-child(4){
+  padding-bottom:0.5rem;
+}
+
+.nav-list.responsive a {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+
+}
+
+
+}
+
+/*heading style*/
+
+.heading {
+    height: 50vh;
+    margin-top: 85px;
+}
+
+h2 {
+  font-family: Baskerville, Song-Md;
+  font-size: 2.5rem;
+  color: #981914;
+  padding-top: 20vh;
+}
+
+.h2-eng {
+  color:#866e5d;
+}
+
+.white-color {
+  color:white;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #981914;
+   font-family: Baskerville, Song-Md;
+   color:#583C2A;
+   margin-top: 0.5rem;
+}
+
+.p-eng {
+  color:#866E5D;
+  marker-bottom:0.5rem;
+}
+
+
+.learnmore {
+  font-family: Baskerville, Song-Md;
+  font-size: 1.2rem;
+  background-color:#981914;
+  padding: 0.5rem;
+  border:none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+.white {
+    color: white;
+}
+
+
+
+/*about us first section and third section styles*/
+
+.first-section, .third-section{
+  color: #866e5d;
+  height: 70vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:8vh 5vw 0vh 5vw;
+  background-color: rgba(175,153,94,0.2);
+}
+
+.third-section {
+  height: 80vh;
+  padding-top: 0vh;
+}
+
+.sketch-mockup{
+  width: 40vw;
+  flex-basis: 40vw;
+  align-self: center;
+   justify-self: start;
+}
+
+.first-section img {
+  padding-top: 7vw
+}
+
+.timeline1 {
+   flex-basis: 7vw;
+   padding-top: 2.5vw;
+   align-self: center;
+}
+
+
+.brief-aboutus-text{
+  flex-basis: 40vw;
+  align-self: center;
+
+}
+
+.brief-aboutus-text-2{
+  flex-basis: 33vw;
+  align-self: center;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+}
+
+
+/*about us second section styles*/
+
+.second-section{
+  color: #866e5d;
+  height: 80vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:0vh 5vw 0vh 5vw;
+  background-color: rgba(180,153,94,0.2);
+}
+
+
+.second-section .sketch-mockup {
+  padding:2.5vw;
+  padding-top: 5vw;
+}
+
+
+
+@media (max-width: 1000px) {
+  .first-section, .third-section {
+  height: 55vh;
+}
+.second-section {
+  height: 55vh;
+}
+
+}
+
+
+@media (max-width: 750px) {
+  .first-section, .third-section {
+  height: 50vh;
+}
+.second-section {
+  height: 50vh;
+}
+ p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+}
+
+@media (max-width: 520px) {
+ .first-section{
+  height: 90vh;
+}
+.second-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns:90vw;
+  grid-template-rows:60vh 40vh;
+}
+
+.third-section {
+  height: 90vh;
+}
+
+
+.sketch-mockup{
+   flex-basis: 90vw;
+}
+
+.second-section .sketch-mockup {
+    grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  width: 85vw;
+  padding: 0;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+} 
+
+
+.timeline1 {
+  flex-basis: 15vw;
+  width: 2vw;
+  padding-top: 0vh;
+  align-self: center ;
+}
+
+#lineis2 {
+  width: 15vw;
+   grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.brief-aboutus-text, .brief-aboutus-text-2 {
+flex-basis: 70vw;
+ align-self: center;
+}
+.brief-aboutus-text-2 {
+  margin-left: 15vw;
+  margin-right: 5vw;
+   grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.timeline3 {
+  align-self: center;
+}
+
+}
+
+/*follow us on fb*/
+h4 {
+   font-family: Baskerville, Song-Md;
+  font-size: 1.5rem;
+}
+
+.white-color {
+  color:white;
+}
+
+.findus-heading {
+  color: white;
+}
+
+
+.social-link {
+    width: 100vw;
+  height: 50vh;
+  background-color: #583c2a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   padding:8vh 5vw 3vh 5vw;
+}
+
+.social-link-head {
+  flex-basis: 40vw;
+}
+.social-link-head h4 {
+  line-height: 1.8rem
+}
+.facebook-container{
+  text-align: center;
+  flex-basis: 40vw;
+}
+
+#facebook {
+  height: 30vh;
+  width: 40vw;
+}
+
+@media (max-width: 900px) {
+.social-link-head {
+    margin-left: 5vw;
+}
+.facebook-container{
+  margin-left: 5vw
+ 
+}
+}
+@media (max-width: 460px) {
+.social-link {
+  height: 70vh;
+}
+.facebook-container{
+  flex-basis: 90vw;
+   margin-left: 0
+}
+.social-link-head {
+  flex-basis: 90vw;
+  margin-right: 5vw;
+}
+#facebook {
+  margin-top: 5vh;
+  width: 80vw;
+}
+}
+
+/*footer*/
+footer {
+  background-color: #3D2211;
+  height: 10vh;
+    text-align: center;
+}
+
+footer p {
+  color: white;
+  font-family: Baskerville, Song-Md;
+  padding-top: 2.5vh;
+  margin:0px;
+}
