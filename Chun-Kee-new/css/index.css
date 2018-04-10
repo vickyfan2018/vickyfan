@@ -1,6 +1,5 @@
 @font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
 @font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
-@font-face {font-family: "Song-Lt";src: url("../fonts/Song-Lt.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
 
 
@@ -110,7 +109,7 @@ a.icon {
   margin-top: 85px;
   height: 100vh;
   width: 100vw;
-    background-image: url("../image/1.gif");
+    background-image: url("../image/30-percent-(NO-LOOP).gif");
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -125,7 +124,8 @@ h1 {
   color: white;
   opacity: 0;
   animation: opacity 5s;
-  animation-delay: 3s
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
 .opening-screen a {
