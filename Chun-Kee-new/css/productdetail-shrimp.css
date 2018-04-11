@@ -170,6 +170,11 @@ h2 {
   width: 35vw;
   margin-left: 32.2vw
 }
+
+.heading img:hover {
+  cursor: pointer;
+}
+
 .pswp img {
   margin-left: 0vw
 }

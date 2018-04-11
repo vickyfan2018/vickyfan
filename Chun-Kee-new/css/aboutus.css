@@ -2,7 +2,7 @@
 @font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
 @font-face {font-family: "Song-Lt";src: url("../fonts/Song-Lt.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
-
+@font-face {font-family: "demo";src: url("../fonts/tr.ttf");}
 body {
   background: #F5F5F5;
 }
@@ -109,23 +109,17 @@ a.icon {
 /*heading style*/
 
 .heading {
-    height: 80vh;
-    margin-top: 85px;
-    background-image: url("../image/aboutus-bg.png");
-    background-size: cover;
-    background-position: left center;
-}
-
-#logoanimation {
-  width:30vw;
-  display: inline;
+  margin-top: 85px;
+  padding-left: 7vw;
+  padding-top: 8vh;
+  background-color: rgba(175,153,94,0.2);
 }
 
 h2 {
   font-family: Baskerville, Song-Md;
   font-size: 2.5rem;
   color: #981914;
-  padding-top: 20vh;
+    line-height: 2.9rem;
 }
 
 .h2-eng {
@@ -135,6 +129,7 @@ h2 {
 .white-color {
   color:white;
 }
+
 
 .center {
   text-align: center;
@@ -169,6 +164,7 @@ p {
 .white {
     color: white;
 }
+
 
 
 
@@ -243,9 +239,6 @@ p {
 
 
 
-
-
-
 @media (max-width: 750px) {
   .first-section, .third-section {
   height: 60vh;
@@ -254,13 +247,21 @@ p {
   height: 60vh;
 }
  p {
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
 }
 
 }
 
-@media (max-width: 520px) {
+@media (min-width: 441px) and (max-width: 650px){
+  .third-section {
+  height: 75vh;
+  padding-bottom: 8vh;
+
+}
+}
+
+@media (max-width: 440px) {
  .first-section{
   height: 100vh;
 }
@@ -268,12 +269,14 @@ p {
   height: 100vh;
   display: grid;
   grid-template-columns:90vw;
-  grid-template-rows:60vh 40vh;
+  grid-template-rows:50vh 40vh;
+  padding-top:10vh 
 }
 
 .third-section {
-  height: 110vh;
-  padding-bottom: 5vh
+  height: 125vh;
+  padding-bottom: 5vh;
+  padding-top: 20vh;
 }
 
 
@@ -287,7 +290,7 @@ p {
   grid-row-start: 1;
   grid-row-end: span 1;
   width: 85vw;
-  padding: 0;
+  padding: 5vh;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 } 
@@ -325,8 +328,21 @@ flex-basis: 70vw;
   align-self: center;
 }
 
+ p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
+}
+
+@media (max-width: 400px) { 
+  .second-section {
+    height: 90vh;
+  }
+  .brief-aboutus-des{
+    align-self: flex-start;
+  }
+}
 /*follow us on fb*/
 h4 {
    font-family: Baskerville, Song-Md;
@@ -407,4 +423,8 @@ footer p {
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
   margin:0px;
+}
+
+.trial {
+font-family: demo;
 }

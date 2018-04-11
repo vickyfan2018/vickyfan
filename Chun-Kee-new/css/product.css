@@ -116,6 +116,7 @@ a.icon {
 h2 {
   font-family: Baskerville, Song-Md;
   font-size: 2.5rem;
+  line-height: 2.9rem;
   color: #981914;
 }
 
@@ -177,7 +178,7 @@ p {
   flex-basis: 26vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vh;
+  padding-top: 5vh;
   text-align: center;
 }
 
@@ -191,7 +192,7 @@ p {
   flex-basis: 43vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vh;
+  padding-top: 8vh;
 }
 .product-group img {
   width:40vw
@@ -203,7 +204,7 @@ p {
   flex-basis: 90vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vh;
+  padding-top: 8vh;
 }
 .product-group img {
   width:80vw
