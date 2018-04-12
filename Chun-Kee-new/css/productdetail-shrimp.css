@@ -1,6 +1,7 @@
-@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
-@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
 
 body {
   background: #F5F5F5;
@@ -148,11 +149,12 @@ p {
   background-color: rgba(175,153,94,0.2);
   background-image: url("../image/productdetail-shrimp-bg.png");
   background-size: contain;
+     width:100vw;
 
 }
 
 h2 {
-  font-family: Baskerville, Song-Md;
+  font-family: imprint, khangxi;
   font-size: 2.5rem;
   color: #981914;
     text-align: center;
@@ -160,7 +162,9 @@ h2 {
 
 .h2-eng {
   color:#866e5d;
-  margin-bottom: 2.5rem
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .heading-img {
@@ -168,7 +172,7 @@ h2 {
 }
 .heading img {
   width: 35vw;
-  margin-left: 32.2vw
+  margin-left: 32.2vw;
 }
 
 .heading img:hover {
@@ -185,7 +189,7 @@ h2 {
 
 
 h3 {
-   font-family: Baskerville, Song-Md;
+   font-family: Baskerville, khangxi;
   font-size: 1.8rem;
   color: #981914;
     text-align: center;
@@ -195,6 +199,7 @@ h3 {
 .h3-eng {
 color: #866e5d;
  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .noodle-price {
@@ -223,6 +228,7 @@ color: #866e5d;
   background-color: #583c2a;
   padding-top: 10vh;
     padding-bottom: 10vh;
+       width:100vw;
 }
 
 .product-intro p {
@@ -243,52 +249,23 @@ color: #866e5d;
   padding-top: 8vh;
   padding-bottom: 8vh;
   background-color: rgba(175,153,94,0.2);
+     width:100vw;
 }
 
-.prod-img-container {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.ingred-details {
+  margin-top: 2.5rem;
 }
 
-.ing-wrapper {
-  margin-left: 1.5vw;
-  margin-right: 1.5vw;
-  flex-basis: 26vw;
-  text-align: center;
+.ingred-details p {
+  line-height: 1.4rem
 }
 
-.ing-wrapper img {
-  width: 20vw;
-}
-
-@media (max-width: 550px){
-.prod-img-container {
-    padding-top: 0vh;
-}
-.ing-wrapper {
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-  padding-top: 10vh;
-  flex-basis: 90vw;
-  text-align: center;
-}
-
-.ing-wrapper img {
-  width: 60vw;
-}
-
-}
 
 /*cooking method style*/
 .cooking-wrapper {
 padding-top: 8vh;
   padding-bottom: 8vh;
-
+   width:100vw;
 }
 
 .cooking-methods-container {
@@ -302,7 +279,8 @@ padding-top: 8vh;
 }
 
 .cooking-method-title {
-  flex-basis: 30vw;
+   flex-basis: 25vw;
+  margin-right: 5vw;
 }
 
 .cooking-method-details {
@@ -314,7 +292,9 @@ padding-top: 8vh;
 .cooking-method-details p {
   text-align: left;
   margin-top: 0;
-  margin-bottom: 0.5rem}
+  margin-bottom: 0.5rem;
+  line-height: 1.4rem
+}
 
 .cooking-method-details .bottom-margin {
   margin-bottom: 1.3rem
@@ -393,19 +373,15 @@ padding-top: 8vh;
 
 
 /*follow us on fb*/
+
 h4 {
    font-family: Baskerville, Song-Md;
   font-size: 1.5rem;
 }
 
-.white-color {
-  color:white;
-}
-
 .findus-heading {
   color: white;
 }
-
 
 .social-link {
     width: 100vw;
@@ -435,27 +411,37 @@ h4 {
 
 @media (max-width: 900px) {
 .social-link-head {
-    margin-left: 5vw;
+  margin-right: 8vw;
 }
-.facebook-container{
-  margin-left: 5vw
- 
+
 }
-}
-@media (max-width: 460px) {
+@media (max-width: 550px) {
 .social-link {
-  height: 70vh;
+  height: 65vh;
+  padding-bottom: 5vh;
 }
 .facebook-container{
   flex-basis: 90vw;
-   margin-left: 0
 }
 .social-link-head {
   flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
 }
 #facebook {
   margin-top: 5vh;
-  width: 80vw;
+  width: 90vw;
+  margin-left: 7vw
+}
+}
+
+@media (max-width: 430px) {
+
+
+#facebook {
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 0
 }
 }
 
@@ -464,12 +450,13 @@ footer {
   background-color: #3D2211;
   height: 10vh;
     text-align: center;
+    width: 100vw;
 }
 
 footer p {
   color: white;
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
-  margin:0px;
+  font-size: 0.8rem;
+  margin-top: 0px;
 }
-

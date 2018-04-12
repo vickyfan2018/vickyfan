@@ -1,6 +1,7 @@
-@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
-@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
 
 body {
   background: #F5F5F5;
@@ -113,7 +114,7 @@ a.icon {
 }
 
 h2 {
-  font-family: Baskerville, Song-Md;
+  font-family: imprint, khangxi;
   font-size: 2.5rem;
   color: #981914;
   line-height: 2.9rem;
@@ -215,19 +216,15 @@ background-color: rgba(175,153,94,0.2);
 }
 
 /*follow us on fb*/
+
 h4 {
    font-family: Baskerville, Song-Md;
   font-size: 1.5rem;
 }
 
-.white-color {
-  color:white;
-}
-
 .findus-heading {
   color: white;
 }
-
 
 .social-link {
     width: 100vw;
@@ -257,27 +254,37 @@ h4 {
 
 @media (max-width: 900px) {
 .social-link-head {
-    margin-left: 5vw;
+  margin-right: 8vw;
 }
-.facebook-container{
-  margin-left: 5vw
- 
+
 }
-}
-@media (max-width: 460px) {
+@media (max-width: 550px) {
 .social-link {
-  height: 70vh;
+  height: 65vh;
+  padding-bottom: 5vh;
 }
 .facebook-container{
   flex-basis: 90vw;
-   margin-left: 0
 }
 .social-link-head {
   flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
 }
 #facebook {
   margin-top: 5vh;
-  width: 80vw;
+  width: 90vw;
+  margin-left: 7vw
+}
+}
+
+@media (max-width: 430px) {
+
+
+#facebook {
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 0
 }
 }
 
@@ -286,11 +293,13 @@ footer {
   background-color: #3D2211;
   height: 10vh;
     text-align: center;
+    width: 100vw;
 }
 
 footer p {
   color: white;
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
-  margin:0px;
+  font-size: 0.8rem;
+  margin-top: 0px;
 }

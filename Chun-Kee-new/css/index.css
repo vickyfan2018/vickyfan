@@ -1,7 +1,7 @@
-@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
-@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
-
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
 
 body {
   background: #F5F5F5;
@@ -106,17 +106,19 @@ a.icon {
 }
 /*opening screen styles*/
 .opening-screen {
-  margin-top: 85px;
+  margin-top: 80px;
   height: 100vh;
   width: 100vw;
-    background-image: url("../image/10-percent-(NO-LOOP).gif");
+    background-image: url("../image/20-once.gif");
     background-size: cover;
     background-position: center center;
     position: relative;
 }
 
+
+
 h1 {
-  font-family: Baskerville, Song-Md;
+  font-family: imprint, khangxi;
   font-size: 4rem;
   line-height: 4.4rem;
   text-align: center;
@@ -124,18 +126,23 @@ h1 {
   color: white;
   opacity: 0;
   animation: opacity 5s;
-  animation-delay: 5s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
 .opening-screen a {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: block;
   width: 100vw;
-  text-align: center;
+  text-align: right;
+  padding-right:15px;
    position: absolute;
   bottom:25px;
+}
+
+.opening-screen a:hover {
+  text-decoration: underline;
 }
 
 @keyframes opacity {
@@ -184,7 +191,7 @@ h1 {
 }
 
 h2 {
-  font-family: Baskerville, Song-Md;
+  font-family: imprint, khangxi;
   font-size: 2.5rem;
   color: #981914;
 
@@ -223,17 +230,18 @@ p {
 
 .learnmore {
   font-family: Baskerville, Song-Md;
-  font-size: 1.2rem;
-  
+  font-size: 1.2rem; 
   background-color:#981914;
   padding: 0.85rem;
   border:none;
   border-radius: 0.5rem;
   margin-top: 0.8rem;
+  color: white;
 }
 
-.learnmore a{
-color: white;
+.learnmore:hover {
+    background-color:#42210B;
+    cursor: pointer;
 }
 
 .product-highlight-chiname {
@@ -456,7 +464,7 @@ display: flex;
 @media (max-width: 460px) {
 
 .findus {
-  height: 160vh;
+  height: 180vh;
 }
 
 .map {
@@ -469,6 +477,7 @@ flex-basis: 90vw;
 
 .findus-info {
   flex-basis: 90vw;
+  padding-top: 0vh;
 }
 .find-us-des {
 display: flex;
@@ -560,4 +569,5 @@ footer p {
   color: white;
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
+  font-size: 0.8rem;
 }

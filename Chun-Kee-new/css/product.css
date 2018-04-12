@@ -1,6 +1,7 @@
-@font-face {font-family: "Song-Bd";src: url("../fonts/Song-Bd.ttc");}
-@font-face {font-family: "Song-Md";src: url("../fonts/Song-Md.ttc");}
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
 @font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
 
 body {
   background: #F5F5F5;
@@ -111,10 +112,11 @@ a.icon {
   padding-left: 7vw;
   padding-top: 8vh;
   background-color: rgba(175,153,94,0.2);
+  width: 100vw;
 }
 
 h2 {
-  font-family: Baskerville, Song-Md;
+  font-family: imprint, khangxi;
   font-size: 2.5rem;
   line-height: 2.9rem;
   color: #981914;
@@ -149,16 +151,32 @@ p {
 
 
 .learnmore {
-  font-family: Baskerville, Song-Md;
-  font-size: 1.2rem;
+   font-family: Baskerville, Song-Md;
+  font-size: 0.87rem;
   background-color:#981914;
-  padding: 0.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
   border:none;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
-
+  color: white;
 }
 
+.learnmore:hover {
+    background-color:#42210B;
+    cursor: pointer;
+}
+
+.learnmore:hover {
+    background-color:#42210B;
+}
+
+.product-group a:hover {
+ text-decoration: underline;
+}
+
+.product-group button a:hover {
+  text-decoration: none;
+}
 
 
 
@@ -170,8 +188,9 @@ p {
   padding-left: 4vw;
   padding-right: 4vw;
   padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-bottom: 15vh;
   background-color: rgba(175,153,94,0.2);
+  width: 100vw;
 }
 
 .product-group {
@@ -179,6 +198,7 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 5vh;
+  padding-bottom: 5vh;
   text-align: center;
 }
 
@@ -211,20 +231,17 @@ p {
 }
 }
 
+
 /*follow us on fb*/
+
 h4 {
    font-family: Baskerville, Song-Md;
   font-size: 1.5rem;
 }
 
-.white-color {
-  color:white;
-}
-
 .findus-heading {
   color: white;
 }
-
 
 .social-link {
     width: 100vw;
@@ -254,27 +271,37 @@ h4 {
 
 @media (max-width: 900px) {
 .social-link-head {
-    margin-left: 5vw;
+  margin-right: 8vw;
 }
-.facebook-container{
-  margin-left: 5vw
- 
+
 }
-}
-@media (max-width: 460px) {
+@media (max-width: 550px) {
 .social-link {
-  height: 70vh;
+  height: 65vh;
+  padding-bottom: 5vh;
 }
 .facebook-container{
   flex-basis: 90vw;
-   margin-left: 0
 }
 .social-link-head {
   flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
 }
 #facebook {
   margin-top: 5vh;
-  width: 80vw;
+  width: 90vw;
+  margin-left: 7vw
+}
+}
+
+@media (max-width: 430px) {
+
+
+#facebook {
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 0
 }
 }
 
@@ -283,11 +310,13 @@ footer {
   background-color: #3D2211;
   height: 10vh;
     text-align: center;
+    width: 100vw;
 }
 
 footer p {
   color: white;
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
-  margin:0px;
+  font-size: 0.8rem;
+  margin-top: 0px;
 }

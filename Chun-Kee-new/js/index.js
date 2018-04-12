@@ -1,3 +1,5 @@
+
+
 function myFunction() {
     var x = document.getElementById("top-nav");
     if (x.className === "nav-list") {
@@ -28,9 +30,10 @@ function WidthChange(mq) {
 }
 
 function changebg(){
-  var urlString = 'url(./image/' + 1 + '.gif)';
+  var urlString = 'url(./image/' + 20 + '.gif)';
   document.getElementById("opening").style.backgroundImage = urlString;   
 }
+
 
 
 
