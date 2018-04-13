@@ -13,18 +13,23 @@
      <script src="js/aos.js"></script>
       <link rel="stylesheet" href="css/aos.css" />
    
-  <script type="text/javascript" src="js/jquery-slim.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
  <link rel="stylesheet" href="css/photoswipe.css"> 
  <link rel="stylesheet" href="css/default-skin.css">    
     <script src="js/photoswipe.js"></script> 
 <script src="js/photoswipe-ui-default.js"></script> 
  <link href="css/productdetail-spinach.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <a href="index.html"><img class="logo" id="logo" width="250" src="image/logo.png">
         </a>
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">選單<br>Menu</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <span id="menu-text">選單<br>Menu</span>
+        <img id="delete" src="./image/delete.png">
+      </a>
+
         
 
      
@@ -123,8 +128,8 @@
   </div>
 
     <div class="noodle-price">
-    <h3 class="h3-chi">每包(一斤):$50
-  <br> <h3 class="h3-eng">per pack: $50</h3></h3>
+    <h3 class="h3-chi">每包(一斤):HKD $50
+  <br> <h3 class="h3-eng">per pack: HKD $50</h3></h3>
   <p>價格於2018年1月更新 <br>Price changed on Jan 2018</p>
   </div>
 </div>
@@ -133,7 +138,7 @@
 
 <!-- product intro -->
 <div class="product-intro">
-  <p>馳名經典皇牌，用原粒瑤柱及一級蝦子，蝦子的鮮味配合瑤柱的香甜，是本店最受歡迎之選 。 <br>This classic noodles is made with whole scallops and high quality shrimp roe. It is the best-selling product.</p>
+  <p>由新鮮菠菜，一級麵粉製成，是素食麵條，適合湯麵、撈麵。是喜愛素食者之最佳選擇。 <br>Fresh spinach, made from first-grade flour, is a vegetarian noodle, suitable for noodle soup and lo mein. It is the best choice for vegetarians.</p>
 
 </div>
 
@@ -237,14 +242,20 @@
       </a></div>
       <div class="swiper-slide">
         <a href="productdetail-chicken.html"><img src="./image/product-cards-chicken.png"><p>雞蓉麵 </p><p class="p-eng">Shrimp Roe noodles</p></a></div>
-      <div class="swiper-slide">
-        <a href="productdetail-spinach.html"><img src="./image/product-cards-spinach.png"><p>菠菜麵 </p><p class="p-eng">Spinach noodles</p></a>
-      </div>
        <div class="swiper-slide">
         <a href="productdetail-fish.html"><img src="./image/product-cards-fish.png"><p>魚蓉麵 </p><p class="p-eng">Fish noodles</p> </a>
       </div>
       <div class="swiper-slide">
         <a href="productdetail-egg.html"><img src="./image/product-cards-egg.png"><p>全蛋麵 </p><p class="p-eng">Egg noodles</p></a>
+      </div>
+          <div class="swiper-slide">
+        <a href="productdetail-shanghai.html"><img src="./image/product-cards-shanghai.png"><p>上海麵 </p><p class="p-eng">Shanghai noodles</p></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="productdetail-wonton.html"><img src="./image/product-cards-wonton.png"><p>全蛋生麵</p><p class="p-eng">Wonton noodle</p></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="productdetail-friednoodle.html"><img src="./image/product-cards-friednoodle.png"><p>全蛋炒麵</p><p class="p-eng">Egg noodles for fry</p></a>
       </div>
     
     </div>

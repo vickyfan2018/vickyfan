@@ -2,9 +2,15 @@ function myFunction() {
     var x = document.getElementById("top-nav");
     if (x.className === "nav-list") {
         x.className += " responsive";
+        document.getElementById("menu-text").style.display = "none";
+        document.getElementById("delete").style.display  = "block";
     } else {
         x.className = "nav-list";
+                document.getElementById("menu-text").style.display = "block";
+        document.getElementById("delete").style.display  = "none";
     }
+    
+
 }
 
 

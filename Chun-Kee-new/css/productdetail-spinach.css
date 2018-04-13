@@ -54,7 +54,7 @@ header {
 }
 
 @keyframes height {
-    from {  height: 0px}
+    from {  height: -30px}
     to {   height: 190px}
 }
 
@@ -71,11 +71,24 @@ a.icon {
    text-align: center;
    line-height: 1.2rem;
   }
-.nav-list  {
+
+a.icon #delete {
+  width:25px;
   display: none;
+  opacity: 0;
+  animation-name: display;
+  animation-duration: 1s;
+  }
+
+@keyframes display 
+  { 
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
-
+.nav-list {
+    display: none;
+}
 
 .nav-list.responsive   {
   background-color: white;
@@ -144,7 +157,7 @@ p {
 
 /*heading style*/
 .heading {
-    margin-top: 85px;
+    margin-top: 80px;
     padding-top: 8vh;
   background-color: rgba(175,153,94,0.2);
   background-image: url("../image/productdetail-spinach-bg.png");
@@ -375,19 +388,15 @@ padding-top: 8vh;
 
 
 /*follow us on fb*/
+
 h4 {
    font-family: Baskerville, Song-Md;
   font-size: 1.5rem;
 }
 
-.white-color {
-  color:white;
-}
-
 .findus-heading {
   color: white;
 }
-
 
 .social-link {
     width: 100vw;
@@ -416,25 +425,38 @@ h4 {
 }
 
 @media (max-width: 900px) {
-.facebook-container{
-  margin-left: 5vw
- 
+.social-link-head {
+  margin-right: 8vw;
 }
+
 }
-@media (max-width: 460px) {
+@media (max-width: 550px) {
 .social-link {
-  height: 70vh;
+  height: 65vh;
+  padding-bottom: 5vh;
 }
 .facebook-container{
   flex-basis: 90vw;
-   margin-left: 0
 }
 .social-link-head {
   flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
 }
 #facebook {
   margin-top: 5vh;
-  width: 80vw;
+  width: 90vw;
+  margin-left: 7vw
+}
+}
+
+@media (max-width: 430px) {
+
+
+#facebook {
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 0
 }
 }
 
@@ -443,12 +465,13 @@ footer {
   background-color: #3D2211;
   height: 10vh;
     text-align: center;
+    width: 100vw;
 }
 
 footer p {
   color: white;
   font-family: Baskerville, Song-Md;
   padding-top: 2.5vh;
-  margin:0px;
+  font-size: 0.8rem;
+  margin-top: 0px;
 }
-
