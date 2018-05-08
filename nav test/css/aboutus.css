@@ -1,0 +1,661 @@
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
+@font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
+
+html {
+  opacity: 0;
+  animation-name:fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+body {
+  background: #F5F5F5;
+    overflow-x: hidden;
+}
+
+
+/*heading style*/
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  padding: 1.25rem 1.25rem;
+
+}
+.nav-list {
+    padding: 1rem 1rem;
+    font-family: Baskerville, Song-Md;
+    float:right;
+}
+
+.nav-item {
+  display: inline-block;
+  width:7rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  padding:0.25rem;
+  line-height: 1.1em;
+}
+ 
+.nav-hover:hover {
+  color:brown;
+}
+
+.icon {
+    display: none;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes height {
+    from {  height: -30px}
+    to {   height: 190px}
+}
+
+
+
+@media (max-width: 900px) {
+a.icon {
+    float: right;
+    display: block;
+    padding:1.25rem;
+    padding-top: 1.5rem;
+   font-size: 1rem;
+   font-family: Baskerville, Song-Md;
+   text-align: center;
+   line-height: 1.2rem;
+  }
+
+a.icon #delete {
+  width:25px;
+  display: none;
+  opacity: 0;
+  animation-name: display;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes display 
+  { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.nav-list  {
+  display: none;
+}
+
+
+
+.nav-list.responsive   {
+  background-color: white;
+    display:flex;
+    flex-direction: column;
+
+    height: 190px;
+    width:100%; 
+    padding-top: 0.25rem; 
+      animation: opacity 1s, height 0.5s;
+  }
+.nav-item{
+  width: 100%;
+  padding-top: 0.5rem;
+        animation: opacity 2s, height 2.5s;
+}
+
+.nav-list.responsive a:nth-child(4){
+  padding-bottom:0.5rem;
+}
+
+.nav-list.responsive a {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+
+}
+
+.nav-list.responsive a {
+  user-select: none;
+  outline: 0;
+outline: none;
+}
+}
+
+/*heading style*/
+
+.heading {
+ margin-top: 80px;
+  padding-left: 7vw;
+  padding-top: 8vh;
+  background-color: rgba(175,153,94,0.2);
+  width:100vw;
+}
+
+h2 {
+  font-family: imprint, khangxi;
+  font-size: 2.5rem;
+  color: #981914;
+    line-height: 2.9rem;
+}
+
+.h2-eng {
+  color:#866e5d;
+}
+
+.white-color {
+  color:white;
+}
+
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #981914;
+   font-family: Baskerville, Song-Md;
+   color:#583C2A;
+   margin-top: 0.5rem;
+}
+
+.p-eng {
+  color:#866E5D;
+  marker-bottom:0.5rem;
+}
+
+
+.learnmore {
+  font-family: Baskerville, Song-Md;
+  font-size: 1.2rem;
+  background-color:#981914;
+  padding: 0.5rem;
+  border:none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+.white {
+    color: white;
+}
+@media (min-width: 1400px) {
+
+ h2 {
+  font-size: 3rem
+}
+.h2-eng {
+  font-size: 2.8rem;
+  margin-top: 0.3rem;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 2.1rem
+}
+.p-eng {
+  line-height: 1.8rem 
+}
+
+}
+
+@media (min-width: 1100px) {
+  .heading {
+    padding-top:10vh;
+  }
+}
+
+/*about us first section and third section styles*/
+
+.first-section, .third-section{
+  color: #866e5d;
+  height: 70vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:8vh 5vw 0vh 5vw;
+  background-color: rgba(175,153,94,0.2);
+}
+
+.first-section {
+  height: 100vh;
+}
+
+.third-section {
+  height: 90vh;
+  padding-top: 0vh;
+}
+
+.sketch-mockup{
+  width: 40vw;
+  flex-basis: 40vw;
+  align-self: center;
+   justify-self: start;
+}
+
+.first-section img {
+  padding-top: 7vw
+}
+
+.timeline1 {
+   flex-basis: 7vw;
+   padding-top: 2.5vw;
+   align-self: center;
+}
+
+
+.brief-aboutus-text{
+  flex-basis: 40vw;
+  align-self: center;
+
+}
+
+.brief-aboutus-text-2{
+  flex-basis: 33vw;
+  align-self: center;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+}
+
+
+/*about us second section styles*/
+
+.second-section{
+  color: #866e5d;
+  height: 80vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:0vh 5vw 0vh 5vw;
+  background-color: rgba(180,153,94,0.2);
+}
+
+
+.second-section .sketch-mockup {
+  padding:2.5vw;
+  padding-top: 5vw;
+}
+
+ .third-section .sketch-mockup{
+  padding:7.5vw;
+
+}
+#stripped { 
+    background-color: #E8E3D7;
+    background-image: url("../image/ck-old-photo-1(smaller).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    height: 70%;
+    width:40%;
+    flex-basis: 40vw;
+    overflow: hidden;
+    align-self: center;
+}
+#stripped svg {
+    background: #E8E3D7;
+    width: 95%;
+    height:100%;
+}
+#stripped svg polyline {  
+    fill: none;
+    stroke: #000; 
+    stroke-width: 200;
+}
+
+#stripped svg polyline {  
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+}
+
+div#stripped svg {
+    mix-blend-mode: lighten;
+}
+
+@media (max-width:600px){
+  #stripped {
+    flex-basis: 100vw;
+     width:100%; 
+     height: 40vh;
+     margin-left: 0%;
+  }
+}
+
+@media (min-width: 1500px) {
+.first-section, .second-section {
+  height: 70vh;
+}
+.first-section {
+  padding-top: 0vh;
+}
+.third-section {
+  height: 80vh;
+}
+}
+
+@media (min-width: 1000px)and (max-width: 1499px) {
+
+.first-section {
+  height: 70vh;
+  padding-top: 0vh;
+}
+.second-section{
+  height: 70vh
+}
+.third-section {
+  height: 70vh
+}
+}
+
+@media (max-width: 750px) {
+  .first-section{
+    height: 80vh;
+  }
+
+.third-section {
+  height: 60vh;
+}
+.second-section {
+  height: 60vh;
+}
+ p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+}
+
+@media (min-width: 441px) and (max-width: 650px){
+  .third-section {
+  height: 75vh;
+  padding-bottom: 8vh;
+
+}
+}
+
+@media (max-width: 440px) {
+ .first-section{
+  height: 150vh;
+}
+.second-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns:90vw;
+  grid-template-rows:55vh 40vh;
+  padding-top:10vh 
+}
+
+.third-section {
+  height: 145vh;
+  padding-bottom: 15vh;
+  padding-top: 20vh;
+}
+
+
+.sketch-mockup{
+   flex-basis: 90vw;
+}
+
+.second-section .sketch-mockup {
+    grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  width: 85vw;
+  padding: 2.5vh;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+} 
+
+
+.timeline1 {
+  flex-basis: 15vw;
+  width: 2vw;
+  padding-top: 0vh;
+  align-self: center ;
+}
+
+#lineis2 {
+  width: 15vw;
+   grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.brief-aboutus-text, .brief-aboutus-text-2 {
+flex-basis: 70vw;
+ align-self: center;
+}
+.brief-aboutus-text-2 {
+  margin-left: 15vw;
+  margin-right: 5vw;
+   grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.timeline3 {
+  align-self: center;
+}
+
+ p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+}
+
+@media (max-width: 400px) { 
+  .second-section {
+    height: 90vh;
+  }
+  .brief-aboutus-des{
+    align-self: flex-start;
+  }
+}
+/*follow us on fb*/
+
+h4 {
+   font-family: Baskerville, Song-Md;
+  font-size: 1.5rem;
+}
+
+.findus-heading {
+  color: white;
+}
+
+.social-link {
+    width: 100vw;
+  height: 50vh;
+  background-color: #583c2a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   padding:5vh 5vw 3vh 5vw;
+}
+
+.social-link-head {
+  flex-basis: 45vw;
+     margin-right: 5vw;
+     display: flex;
+      align-items: center;
+}
+
+.social-link-head h2 {
+  line-height: 3rem;
+}
+.social-link-head h4 {
+   margin-top: 10px
+}
+.facebook-container{
+  text-align: center;
+  flex-basis: 40vw;
+
+}
+
+
+
+#facebook {
+  height: 30vh;
+  width: 40vw;
+
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+.social-link {
+  height: 30vh;
+}
+.facebook-container iframe {
+  padding-top: 1em;
+
+}
+}
+
+@media (min-width: 1301px) and (max-width: 1599px) {
+.social-link {
+  height: 40vh;
+}
+.facebook-container iframe {
+  padding-top: 1.2em;
+
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+.social-link {
+  height: 40vh;
+}
+.facebook-container iframe {
+  padding-top: 1em;
+
+}
+}
+@media (min-width: 901px) and (max-width:1199px) {
+.social-link {
+  height: 45vh;
+}
+.facebook-container iframe {
+  padding-top: 1.8em;
+
+}
+}
+
+
+
+@media (max-width: 900px) {
+
+.facebook-container{
+  flex-basis: 40vw;
+}
+.social-link-head {
+  flex-basis: 40vw;
+  margin-right: 0vw;
+}
+.social-link-head iframe {
+  width:80vw;
+     margin-left: 7vw
+}
+
+.social-link-head {
+  margin-right: 8vw;
+}
+
+}
+@media (max-width: 550px) {
+.social-link {
+  height: 65vh;
+  padding-bottom: 5vh;
+}
+
+.social-link-head {
+  flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
+}
+
+.facebook-container{
+  flex-basis: 90vw;
+  text-align: center;
+  align-self: center;
+
+}
+
+#facebook {
+  width:80vw;
+  margin-top: 20px;
+     margin-left: 7vw;
+
+}
+ 
+}
+
+@media (max-width: 430px) {
+.social-link {
+  height: 70vh
+}
+.social-link-head h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-top: 15px;
+}
+
+.social-link-head h4 {
+  margin-top: 15px
+}
+.social-link-head iframe {
+  width:80vw;
+   margin-top: 5vh;
+}
+
+
+}
+/*footer*/
+footer {
+  background-color: #3D2211;
+  height: 9vh;
+    text-align: center;
+    width: 100vw;
+}
+
+footer p {
+  color: white;
+  font-family: Baskerville, Song-Md;
+  padding-top: 2.5vh;
+  font-size: 0.8rem;
+  margin-top: 0
+}
+
+@media (min-width: 1000px) {
+  footer {
+    height: 8vh;
+  }
+}

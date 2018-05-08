@@ -1,0 +1,626 @@
+@font-face {font-family: "Song-Md";src: url("../fonts/song_md.ttf");}
+@font-face {font-family: "Baskerville";src: url("../fonts/Baskerville.ttf");}
+@font-face {font-family: "khangxi";src: url("../fonts/khangxi.ttf");}
+@font-face {font-family: "imprint";src: url("../fonts/ImprintMTShadow.ttf");}
+html {
+  opacity: 0;
+  animation-name:fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background: #F5F5F5;
+    overflow-x: hidden;
+}
+
+
+/*heading style*/
+
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  padding: 1.25rem 1.25rem;
+
+}
+.nav-list {
+    padding: 1rem 1rem;
+    font-family: Baskerville, Song-Md;
+    float:right;
+}
+
+.nav-item {
+  display: inline-block;
+  width:7rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  padding:0.25rem;
+  line-height: 1.1em;
+}
+ 
+.nav-hover:hover {
+  color:brown;
+}
+
+.icon {
+    display: none;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes height {
+    from {  height: -30px}
+    to {   height: 190px}
+}
+
+
+
+@media (max-width: 900px) {
+a.icon {
+    float: right;
+    display: block;
+    padding:1.25rem;
+    padding-top: 1.5rem;
+   font-size: 1rem;
+   font-family: Baskerville, Song-Md;
+   text-align: center;
+   line-height: 1.2rem;
+  }
+
+a.icon #delete {
+  width:25px;
+  display: none;
+  opacity: 0;
+  animation-name: display;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes display 
+  { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list.responsive   {
+  background-color: white;
+    display:flex;
+    flex-direction: column;
+
+    height: 190px;
+    width:100%; 
+    padding-top: 0.25rem; 
+      animation: opacity 1s, height 0.5s;
+  }
+.nav-item{
+  width: 100%;
+  padding-top: 0.5rem;
+        animation: opacity 2s, height 2.5s;
+}
+
+.nav-list.responsive a:nth-child(4){
+  padding-bottom:0.5rem;
+}
+
+.nav-list.responsive a {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+
+}
+
+
+}
+
+/*general style*/
+
+.white-color {
+  color:white;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+   font-family: Baskerville, Song-Md;
+   color:#583C2A;
+   margin-top: 0.9rem;
+   text-align: center;
+}
+
+.p-eng {
+  color:#866E5D;
+  marker-bottom:0.5rem;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+
+.learnmore {
+  font-family: Baskerville, Song-Md;
+  font-size: 1.2rem;
+  background-color:#981914;
+  padding: 0.5rem;
+  border:none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+
+/*heading style*/
+.heading {
+    margin-top: 80px;
+    padding-top: 8vh;
+  background-color: rgba(175,153,94,0.2);
+  background-image: url("../image/productdetail-spinach-bg.png");
+  background-size: contain;
+     width:100vw;
+}
+
+h2 {
+  font-family: imprint, khangxi;
+  font-size: 2.5rem;
+  color: #3B5F43;
+    text-align: center;
+}
+
+.h2-eng {
+  color:#98AA5F;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.heading-img {
+  text-align: center;
+}
+.heading img {
+  width: 35vw;
+  margin-left: 32.2vw
+}
+
+.heading img:hover {
+  cursor: pointer;
+}
+
+.pswp img {
+  margin-left: 0vw
+}
+.noodle-option {
+  width:100vw;
+}
+
+
+
+h3 {
+   font-family:Baskerville, khangxi;
+  font-size: 1.8rem;
+  color: #981914;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.h3-eng {
+color: #866e5d;
+ font-size: 1.5rem;
+ line-height: 1.8rem;
+}
+
+.noodle-price {
+  margin-top: 3vh;
+  padding-bottom: 5vh;
+     margin-bottom: 0px;
+}
+
+.noodle-price p {
+  font-size: 0.7rem;
+  line-height: 0.9rem
+}
+
+.noodle-price .h3-chi {
+  color: #3B5F43
+}
+
+@media (max-width: 1050px){
+  .heading img {
+  width: 60vw;
+  margin-left: 20vw;
+}
+.pswp img {
+  margin-left: 0vw
+}
+}
+
+/*Product intro style*/
+.product-intro {
+  background-color: #3B5F43;
+  padding-top: 10vh;
+    padding-bottom: 10vh;
+         width:100vw;
+}
+
+.product-intro p {
+  color: white;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+@media (max-width: 450px){
+  .product-intro p {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+}
+
+/*Product ingredient style*/
+.product-ingred {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  background-color: rgba(175,153,94,0.2);
+     width:100vw;
+}
+
+.ingred-details {
+  margin-top: 2.5rem;
+}
+
+.ingred-details p {
+  line-height: 1.4rem
+}
+
+/*cooking method style*/
+.cooking-wrapper {
+padding-top: 8vh;
+  padding-bottom: 8vh;
+     width:100vw;
+}
+
+.cooking-methods-container {
+   padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cooking-method-title {
+  flex-basis: 25vw;
+  margin-right: 5vw;
+}
+
+.cooking-method-details {
+  flex-basis: 55vw;
+  margin-bottom: 8vh;
+}
+
+
+.cooking-method-details p {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4rem
+}
+
+.cooking-method-details .bottom-margin {
+  margin-bottom: 1.3rem
+}
+
+
+@media (max-width: 585px){
+.cooking-methods-container {
+   padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.cooking-method-title {
+  flex-basis: 80vw;
+}
+
+.cooking-method-details {
+  flex-basis: 80vw;
+  margin-top: 4vh;
+}
+
+}
+
+/*swiper other product*/
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align:flex-start;
+      -ms-flex-align: flex-start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+    }
+.other-product-wrapper {
+  padding-bottom: 7vh;
+}
+
+
+
+@media (min-width: 1201px){
+  .swiper-wrapper img {
+  width:30vw;
+}
+.swiper-slide{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+}
+
+@media (max-width: 1200px){
+  .swiper-wrapper img {
+  width:30vw;
+}
+.swiper-slide{
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+}
+}
+
+@media (max-width: 640px){
+  .swiper-wrapper img {
+  width:40vw;
+}
+}
+
+
+/*follow us on fb*/
+
+h4 {
+   font-family: Baskerville, Song-Md;
+  font-size: 1.5rem;
+}
+
+.findus-heading {
+  color: white;
+}
+
+.social-link {
+    width: 100vw;
+  height: 50vh;
+  background-color: #583c2a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   padding:5vh 5vw 3vh 5vw;
+}
+
+.social-link-head {
+  flex-basis: 45vw;
+     margin-right: 5vw;
+     display: flex;
+      align-items: center;
+}
+
+.social-link-head h2 {
+  line-height: 3rem;
+    text-align: left;
+}
+.social-link-head h4 {
+   margin-top: 10px
+}
+.facebook-container{
+  text-align: center;
+  flex-basis: 40vw;
+
+}
+
+
+
+#facebook {
+  height: 30vh;
+  width: 40vw;
+
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+.social-link {
+  height: 30vh;
+}
+.facebook-container iframe {
+  padding-top: 1em;
+
+}
+}
+
+@media (min-width: 1301px) and (max-width: 1599px) {
+.social-link {
+  height: 40vh;
+}
+.facebook-container iframe {
+  padding-top: 1.2em;
+
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+.social-link {
+  height: 40vh;
+}
+.facebook-container iframe {
+  padding-top: 1em;
+
+}
+}
+@media (min-width: 901px) and (max-width:1199px) {
+.social-link {
+  height: 45vh;
+}
+.facebook-container iframe {
+  padding-top: 1.8em;
+
+}
+}
+
+
+
+@media (max-width: 900px) {
+
+.facebook-container{
+  flex-basis: 40vw;
+}
+.social-link-head {
+  flex-basis: 40vw;
+  margin-right: 0vw;
+}
+.social-link-head iframe {
+  width:80vw;
+     margin-left: 7vw
+}
+
+.social-link-head {
+  margin-right: 8vw;
+}
+
+}
+@media (max-width: 550px) {
+.social-link {
+  height: 65vh;
+  padding-bottom: 5vh;
+}
+
+.social-link-head {
+  flex-basis: 90vw;
+  margin-right: 0vw;
+  text-align: center;
+}
+
+.facebook-container{
+  flex-basis: 90vw;
+  text-align: center;
+  align-self: center;
+
+}
+
+#facebook {
+  width:80vw;
+  margin-top: 20px;
+     margin-left: 7vw;
+
+}
+ 
+}
+
+@media (max-width: 430px) {
+.social-link {
+  height: 70vh
+}
+.social-link-head h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-top: 15px;
+}
+
+.social-link-head h4 {
+  margin-top: 15px
+}
+.social-link-head iframe {
+  width:80vw;
+   margin-top: 5vh;
+}
+
+
+}
+
+/*footer*/
+footer {
+  background-color: #3D2211;
+  height: 10vh;
+    text-align: center;
+    width: 100vw;
+}
+
+footer p {
+  color: white;
+  font-family: Baskerville, Song-Md;
+  padding-top: 2.5vh;
+  font-size: 0.8rem;
+  margin-top: 0px;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    height: 8vh;
+  }
+}
+
+@media (min-width: 1400px) {
+
+p {
+   font-size: 1.4rem;
+    line-height: 2rem
+}
+
+ h2 {
+  font-size: 3rem
+}
+h3 {
+  font-size: 2.5rem;
+  line-height: 3rem
+}
+.h2-eng {
+  font-size: 2.8rem;
+  margin-top: 0.3rem;
+}
+.product-intro p {
+  font-size: 1.4rem;
+  line-height: 2rem
+}
+.ingred-details p {
+  font-size: 1.4rem;
+  line-height: 2rem
+}
+
+.cooking-method-details p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.cooking-method-details .p-eng {
+  line-height: 1.8rem 
+}
+
+.noodle-option p {
+  margin-top: 1.5rem
+}
+
+}
