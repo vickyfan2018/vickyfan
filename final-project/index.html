@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Are you a clever person?</title>
+	<link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.js"></script>
+
+  </head>
+
+<body>
+
+   <nav>
+        <a href="index.html"><img class="logo" width="70px" height="70px" src="./image/logo.png">
+      </a>
+        
+</nav>
+
+    <header class="wow fadeInDown">
+      <h1>Are you a clever person? <h1>
+      <h2>Choose your answer</h2>
+    </header>
+
+<section class="wow fadeInDown">
+
+<!-- quiz container  -->
+<div id="quizContainer" class="container">
+
+      <div id="question" class="question"></div>
+      <div class="choice-wrapper">
+
+      <div class="choice">
+        <img src="" id="image1"> 
+        <div class="wrapper">
+          <div class="container">
+          <input type="checkbox" id="Check1"   onclick="oneChoiceOnly(this.id)" value="1" ><span class="checkmark"></span>
+          </div>
+          <span class="choiceans" id="choice1"></span>
+        </div>
+      </div>
+
+      <div class="choice">
+         <img src="" id="image2"> 
+        <div class="wrapper">
+          <div class="container">
+          <input type="checkbox" id="Check2" onclick="oneChoiceOnly(this.id)" value="2" ><span class="checkmark"></span>
+          </div>
+          <span class="choiceans" id="choice2"></span>
+        </div>
+      </div>
+
+      <div class="choice">
+         <img src="" id="image3"> 
+        <div class="wrapper">
+          <div class="container">
+          <input type="checkbox" id="Check3" onclick="oneChoiceOnly(this.id)" value="3" ><span class="checkmark"></span>
+          </div>
+          <span class="choiceans" id="choice3"></span>
+        </div>
+      </div>
+
+      <div class="choice">
+         <img src="" id="image4"> 
+        <div class="wrapper">
+          <div class="container">
+          <input type="checkbox" id="Check4" onclick="oneChoiceOnly (this.id)" value="4" ><span class="checkmark"></span>
+          </div>
+          <span class="choiceans" id="choice4"></span>
+        </div>
+      </div>
+      </div>
+
+      <div id="alertBox" class="alert-box"></div>
+
+<!--  previous and next buttons  -->
+      <div class="button-wrapper">
+
+        <button id="previousButton" class="previous-btn" onclick="previousQuestion();" style="display:none;"><span>Previous</span></button>
+
+        <button id="nextButton" class="next-btn" onclick="NextQuestion();"><span>Next</span></button>
+
+      </div>
+
+    </div>
+
+<!-- result page -->
+    <div id="result" class="container result" style="display:none;">
+    </div>
+
+    <button id="again" class="doItAgain" style="display:none;" onClick="window.location.reload()">Play again
+    </button>
+
+   </section>
+
+<!-- Footer -->
+   <footer>
+        <p>Done by Vicky Fan</p>
+    </footer>
+</body>
+	  <script type="text/javascript" src="./js/index.js">
+</script>
+</html>
